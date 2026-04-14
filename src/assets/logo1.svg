@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 180" width="580" height="180">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&amp;family=Exo+2:wght@300;400&amp;display=swap');
+    </style>
+
+    <!-- Icon gradient - deep navy to electric blue -->
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A56FF"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+
+    <!-- Subtle inner shadow for depth -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A8A"/>
+      <stop offset="100%" style="stop-color:#0F172A"/>
+    </linearGradient>
+
+    <!-- Highlight top edge -->
+    <linearGradient id="topHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#38BDF8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#38BDF8;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- Soft drop shadow -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1A56FF" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Glow for icon accent -->
+    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Clean white/off-white background -->
+  <rect width="580" height="180" rx="0" fill="#FFFFFF"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--           ICON MARK                 -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Outer square icon container with rounded corners -->
+  <rect x="28" y="28" width="124" height="124" rx="18"
+        fill="url(#shieldGrad)"
+        filter="url(#softShadow)"/>
+
+  <!-- Subtle top highlight line -->
+  <rect x="28" y="28" width="124" height="3" rx="2"
+        fill="url(#topHighlight)" opacity="0.6"/>
+
+  <!-- ── Crown shape, geometric & clean ── -->
+  <!-- Crown base -->
+  <rect x="46" y="112" width="88" height="14" rx="3"
+        fill="url(#iconGrad)"/>
+
+  <!-- Crown body outline -->
+  <path d="M50 112 L50 82 L68 100 L90 52 L112 100 L130 82 L130 112 Z"
+        fill="url(#iconGrad)"/>
+
+  <!-- Internal dark cutouts to define crown shape -->
+  <polygon points="60,112 68,100 76,112" fill="#0F172A"/>
+  <polygon points="90,76 104,112 76,112" fill="#0F172A"/>
+  <polygon points="120,112 112,100 104,112" fill="#0F172A"/>
+
+  <!-- Crown jewel top center -->
+  <circle cx="90" cy="47" r="7" fill="#38BDF8" filter="url(#glowBlue)"/>
+  <circle cx="90" cy="47" r="3.5" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Crown side dots -->
+  <circle cx="50" cy="78" r="5" fill="#38BDF8" filter="url(#glowBlue)"/>
+  <circle cx="50" cy="78" r="2.5" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="130" cy="78" r="5" fill="#38BDF8" filter="url(#glowBlue)"/>
+  <circle cx="130" cy="78" r="2.5" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- Small circuit dots on base -->
+  <circle cx="62" cy="119" r="2" fill="#38BDF8" opacity="0.7"/>
+  <circle cx="90" cy="119" r="2" fill="#38BDF8" opacity="0.7"/>
+  <circle cx="118" cy="119" r="2" fill="#38BDF8" opacity="0.7"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--           TYPOGRAPHY                -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Company name: KINGTECHSOL -->
+  <!-- KING -->
+  <text x="178" y="92"
+        font-family="'Trebuchet MS', 'Gill Sans', sans-serif"
+        font-size="54"
+        font-weight="700"
+        fill="#0F172A"
+        letter-spacing="-1">KING</text>
+
+  <!-- TECH in brand blue -->
+  <text x="300" y="92"
+        font-family="'Trebuchet MS', 'Gill Sans', sans-serif"
+        font-size="54"
+        font-weight="700"
+        fill="#1A56FF"
+        letter-spacing="-1">TECH</text>
+
+  <!-- SOL slightly lighter weight -->
+  <text x="432" y="92"
+        font-family="'Trebuchet MS', 'Gill Sans', sans-serif"
+        font-size="54"
+        font-weight="700"
+        fill="#0F172A"
+        letter-spacing="-1">SOL</text>
+
+  <!-- Thin separator line -->
+  <rect x="178" y="102" width="374" height="1.5" rx="1"
+        fill="#1A56FF" opacity="0.2"/>
+
+  <!-- Tagline -->
+  <text x="179" y="126"
+        font-family="'Trebuchet MS', 'Georgia', sans-serif"
+        font-size="12"
+        font-weight="400"
+        fill="#64748B"
+        letter-spacing="4.5">INTELLIGENT SOFTWARE SOLUTIONS</text>
+
+  <!-- Bottom right small accent dots -->
+  <circle cx="550" cy="148" r="3" fill="#1A56FF" opacity="0.3"/>
+  <circle cx="558" cy="148" r="3" fill="#06B6D4" opacity="0.3"/>
+  <circle cx="566" cy="148" r="3" fill="#1A56FF" opacity="0.15"/>
+
+</svg>
