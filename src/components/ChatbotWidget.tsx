@@ -15,18 +15,24 @@ const GROQ_API_URL =
 
 const SYSTEM_PROMPT = `You are the official AI assistant for Devmetasol (a software & digital agency).
 
-CRITICAL INSTRUCTIONS FOR EVERY REPLY:
-1. BE VERY SHORT, DIRECT & SPECIFIC:
-   - Answer the exact question asked in 2 to 4 concise bullet points (•) OR 1–2 direct sentences.
-   - Max 15 words per bullet point.
-   - NO introductory filler ("Hello!", "Sure thing!", "Here is what you need"). Go straight to the answer.
-   - NO essays, NO long paragraphs, NO markdown tables.
-2. FORMATTING:
-   - Always put each bullet point on its own new line.
-3. CLOSING:
-   - End with 1 short line offering quick action: e.g. "👉 WhatsApp us at +92 332 0409566 for a quick quote!"
-4. SCOPE:
-   - Only answer questions about Devmetasol and software/tech services. Politely decline off-topic requests in 1 line.
+CRITICAL FORMATTING RULES (STRICT):
+1. NO STARS OR ASTERISKS:
+   - NEVER use asterisks (*) or double asterisks (**) anywhere in your response.
+   - Do NOT use * for bullet points.
+   - Do NOT use ** for bolding.
+2. MAIN HEADINGS:
+   - If writing a main heading, write it on its own line ending with a colon (e.g. "Services Offered:" or "Contact Details:").
+3. POINTS IN DOTS OR NUMBERS:
+   - For list items, always format each point starting with a dot (•) or number (1., 2., 3.).
+   - Put each point on its own new line.
+4. BE VERY SHORT, DIRECT & SPECIFIC:
+   - 2 to 4 concise points maximum.
+   - Max 15 words per point.
+   - NO introductory fluff ("Sure!", "Hello!"). Directly answer the user.
+5. CLOSING:
+   - End with 1 short line: e.g. "👉 WhatsApp us at +92 332 0409566 for a quick quote!"
+6. SCOPE:
+   - Only answer Devmetasol and software/tech topics. Politely decline off-topic in 1 line.
 
 ═══ DEVMETASOL FACTS ═══
 • Core Services: Web Development (React, Next.js, Node), Mobile Apps (Flutter, iOS, Android), Custom Software & ERP, UI/UX (Figma), AI/ML, Cloud/DevOps (AWS/Azure), Digital Marketing & SEO.
@@ -43,19 +49,22 @@ CRITICAL INSTRUCTIONS FOR EVERY REPLY:
 
 ═══ SAMPLE RESPONSES ═══
 User: "What services do you offer?"
+Our Core Services:
 • Web & Mobile Apps (React, Next.js, Flutter, Node)
 • Custom Enterprise Software & ERP Systems
 • UI/UX Design & Prototyping
-• Cloud (AWS/Azure), AI & Digital Marketing
+• Cloud (AWS/Azure) & Digital Marketing
 👉 WhatsApp us at +92 332 0409566 to discuss your project!
 
 User: "Where are your offices?"
-• Office 1: LUMS Incubation Center, Lahore, Pakistan
-• Office 2: Jumeirah Lake Towers, Dubai, UAE
+Office Locations:
+1. LUMS Incubation Center, Lahore, Pakistan
+2. Jumeirah Lake Towers, Dubai, UAE
 👉 Reach us anytime on WhatsApp: +92 332 0409566
 
 User: "How much does a project cost?"
-• Costs depend on scope, features, and timeline.
+Pricing Overview:
+• Pricing depends on project scope, features, and timeline.
 • We offer fixed-price projects and monthly dedicated developer squads.
 👉 WhatsApp us at +92 332 0409566 for a free instant estimate!`;
 
@@ -106,18 +115,82 @@ const ChatbotWidget = () => {
     setTimeout(() => inputRef.current?.focus(), 50);
   };
 
-  // Helper to render bold text inside message bubble
+  // Helper to render message content without stars, with bold headings, and clean dots/numbers
   const renderFormattedContent = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
-    return parts.map((part, index) => {
-      if (part.startsWith("**") && part.endsWith("**")) {
+    const lines = text.split("\n");
+
+    // Helper to format inline bold text without leaving raw asterisks
+    const renderInline = (str: string) => {
+      // Split on **bold** pattern
+      const parts = str.split(/(\*\*.*?\*\*)/g);
+      return parts.map((part, partIdx) => {
+        if (part.startsWith("**") && part.endsWith("**") && part.length > 4) {
+          const inner = part.slice(2, -2).replace(/\*/g, "").trim();
+          return (
+            <strong key={partIdx} className="font-bold text-slate-900">
+              {inner}
+            </strong>
+          );
+        }
+        // Strip any remaining lone asterisks so stars never appear
+        const cleanPart = part.replace(/\*/g, "");
+        return cleanPart;
+      });
+    };
+
+    return lines.map((line, lineIdx) => {
+      let trimmed = line.trim();
+      if (!trimmed) {
+        return <div key={lineIdx} className="h-1.5" />;
+      }
+
+      // Convert any leading asterisk bullet (* or -) into a clean dot bullet (•)
+      if (/^[\*\-]\s+/.test(trimmed)) {
+        trimmed = "• " + trimmed.replace(/^[\*\-]\s+/, "");
+      }
+
+      // Identify bullet items (•)
+      const isBullet = trimmed.startsWith("•");
+
+      // Identify numbered items (1., 2., 3., etc.)
+      const numberMatch = trimmed.match(/^(\d+[\.\)])\s+(.*)/);
+
+      // Identify main heading (ends with : or was wrapped in bold or header format)
+      const isHeading =
+        (trimmed.endsWith(":") && trimmed.length < 60) ||
+        (/^(\*\*[^\*]+\*\*|\#[^\#]+)/.test(line.trim()) && !isBullet && !numberMatch);
+
+      if (isBullet) {
         return (
-          <strong key={index} className="font-semibold">
-            {part.slice(2, -2)}
-          </strong>
+          <div key={lineIdx} className="flex items-start gap-2 my-1">
+            <span className="text-blue-600 font-bold shrink-0 leading-tight">•</span>
+            <span className="flex-1">{renderInline(trimmed.slice(1).trim())}</span>
+          </div>
         );
       }
-      return part;
+
+      if (numberMatch) {
+        return (
+          <div key={lineIdx} className="flex items-start gap-2 my-1">
+            <span className="text-blue-600 font-bold shrink-0 leading-tight">{numberMatch[1]}</span>
+            <span className="flex-1">{renderInline(numberMatch[2])}</span>
+          </div>
+        );
+      }
+
+      if (isHeading) {
+        return (
+          <div key={lineIdx} className="font-bold text-slate-900 mt-2 mb-1 text-xs sm:text-sm">
+            {renderInline(trimmed.replace(/^#+\s*/, ""))}
+          </div>
+        );
+      }
+
+      return (
+        <div key={lineIdx} className="my-0.5">
+          {renderInline(trimmed)}
+        </div>
+      );
     });
   };
 
