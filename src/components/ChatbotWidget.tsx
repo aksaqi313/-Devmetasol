@@ -64,15 +64,17 @@ interface Message {
   content: string;
 }
 
+const INITIAL_MESSAGES: Message[] = [
+  {
+    role: "assistant",
+    content:
+      "👋 Hi! I'm Devmetasol AI.\nAsk me anything about our services, pricing, tech stack, or team!",
+  },
+];
+
 const ChatbotWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: "assistant",
-      content:
-        "👋 Hi! I'm Devmetasol AI.\nAsk me anything about our services, pricing, tech stack, or team!",
-    },
-  ]);
+  const [messages, setMessages] = useState<Message[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
@@ -96,6 +98,13 @@ const ChatbotWidget = () => {
     const timer = setTimeout(() => setShowBubble(false), 5000);
     return () => clearTimeout(timer);
   }, []);
+
+  const handleClearChat = () => {
+    setMessages(INITIAL_MESSAGES);
+    setInput("");
+    setIsLoading(false);
+    setTimeout(() => inputRef.current?.focus(), 50);
+  };
 
   // Helper to render bold text inside message bubble
   const renderFormattedContent = (text: string) => {
@@ -312,9 +321,29 @@ const ChatbotWidget = () => {
                 <p className="text-slate-300 text-xs">Online • Quick answers</p>
               </div>
             </div>
+
+            {/* Clear / Refresh Chat Button */}
+            <button
+              onClick={handleClearChat}
+              className="text-slate-300 hover:text-white transition-colors p-1.5 rounded-full hover:bg-white/10"
+              title="Clear & restart chat"
+              aria-label="Clear chat"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                />
+              </svg>
+            </button>
+
+            {/* Close Button */}
             <button
               onClick={() => setIsOpen(false)}
               className="text-slate-300 hover:text-white transition-colors p-1.5 rounded-full hover:bg-white/10"
+              title="Close chat"
               aria-label="Close chat"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
