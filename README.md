@@ -193,8 +193,7 @@ Devmetasol website/
 
 | Component | Description |
 |---|---|
-| `EndlessInnovators.tsx` | Contact page intro section |
-| `ContactForm.tsx` | Full contact form with toast notifications |
+| `ContactForm.tsx` | Full contact form with toast notifications and WhatsApp integration |
 | `OfficesMap.tsx` | Interactive offices map |
 | `OurClientsSimple.tsx` | Simplified client logos |
 | `OurOffices.tsx` | Office contact info blocks |

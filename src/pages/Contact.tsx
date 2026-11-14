@@ -1,7 +1,6 @@
-﻿import { useEffect } from "react";
-import EndlessInnovators from "../components/EndlessInnovators";
-import OurClients from "../components/OurClients";
+import { useEffect } from "react";
 import ContactForm from "../components/ContactForm";
+import OurClients from "../components/OurClients";
 import OfficesMap from "../components/OfficesMap";
 import AllFooter from "../components/AllFooter";
 import SEO from "../components/SEO";
@@ -23,10 +22,8 @@ const Contact = () => {
           { name: 'Contact', url: '/contact' }
         ]}
       />
-      <EndlessInnovators />
-      {/* <WhatYouWillHear /> */}
-      <OurClients />
       <ContactForm />
+      <OurClients />
       <OfficesMap />
       <AllFooter />
     </>

@@ -11,12 +11,12 @@ const OurClients = () => {
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       maxWidth: "1100px",
       margin: "0 auto",
-      padding: "80px 20px",
-      minHeight: "50vh",
+      padding: "40px 20px 60px",
+      minHeight: "auto",
       textAlign: "center" as const,
     },
     headerSection: {
-      marginBottom: "60px",
+      marginBottom: "30px",
     },
     mainTitle: {
       color: "#1a365d",
