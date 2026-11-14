@@ -306,8 +306,8 @@ const ChatbotWidget = () => {
       {/* Chat Window */}
       {isOpen && (
         <div
-          className="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] max-w-sm bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-200"
-          style={{ height: "480px" }}
+          className="fixed bottom-24 sm:bottom-28 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[410px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-200"
+          style={{ height: "520px" }}
         >
           {/* Header */}
           <div className="bg-[#0f223d] px-4 py-3 flex items-center gap-3">
@@ -454,12 +454,12 @@ const ChatbotWidget = () => {
       )}
 
       {/* Floating Bubble Button */}
-      <div className="fixed bottom-6 right-4 sm:right-6 z-50 flex flex-col items-end gap-2">
+      <div className="fixed bottom-6 right-4 sm:right-6 z-50 flex flex-col items-end gap-2.5">
         {/* Hint bubble */}
         {showBubble && !isOpen && (
-          <div className="bg-white text-slate-800 text-xs sm:text-sm font-medium px-3.5 py-2 rounded-xl shadow-lg border border-slate-200 max-w-[190px] text-center animate-bounce">
+          <div className="bg-white text-slate-800 text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-2xl shadow-xl border border-slate-200 max-w-[210px] text-center animate-bounce">
             💬 Have a question? Ask AI!
-            <div className="absolute bottom-[-6px] right-5 w-3 h-3 bg-white border-r border-b border-slate-200 rotate-45"></div>
+            <div className="absolute bottom-[-6px] right-6 sm:right-8 w-3.5 h-3.5 bg-white border-r border-b border-slate-200 rotate-45"></div>
           </div>
         )}
 
@@ -468,20 +468,20 @@ const ChatbotWidget = () => {
             setIsOpen(!isOpen);
             setShowBubble(false);
           }}
-          className="w-14 h-14 bg-gradient-to-tr from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative"
+          className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-tr from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 text-white rounded-full flex items-center justify-center shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 hover:scale-105 active:scale-95 relative cursor-pointer"
           aria-label={isOpen ? "Close chat" : "Open AI chat"}
         >
           {/* Status indicator when closed */}
           {!isOpen && (
-            <span className="absolute top-0 right-0 w-3.5 h-3.5 bg-green-400 rounded-full border-2 border-white animate-pulse"></span>
+            <span className="absolute top-0 right-0 w-4 h-4 sm:w-5 sm:h-5 bg-green-400 rounded-full border-2 sm:border-3 border-white animate-pulse shadow-sm"></span>
           )}
 
           {isOpen ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 sm:w-9 sm:h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
             </svg>
           )}
