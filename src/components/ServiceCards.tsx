@@ -300,7 +300,7 @@ const ServiceCards = () => {
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-10 md:py-12 lg:py-16">
+    <section className="bg-white pt-2 sm:pt-4 md:pt-6 pb-12 sm:pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}

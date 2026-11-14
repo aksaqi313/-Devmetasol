@@ -170,13 +170,6 @@ const TechnologyIcon = ({
             />
           </svg>
         );
-      case ".NET MAUI":
-        return (
-          <svg viewBox="0 0 24 24" className="w-full h-full">
-            <circle cx="12" cy="12" r="10" fill="#512BD4" />
-            <circle cx="12" cy="12" r="3" fill="white" />
-          </svg>
-        );
       // Programming Languages
       case "JavaScript":
         return (
@@ -729,7 +722,6 @@ const FullStackExpertise = () => {
       { name: "Flutter", color: "bg-blue-400" },
       { name: "Xamarin", color: "bg-blue-600" },
       { name: "React Native", color: "bg-cyan-500" },
-      { name: ".NET MAUI", color: "bg-purple-600" },
     ],
     "Programming Languages": [
       { name: "JavaScript", color: "bg-yellow-500" },
@@ -772,7 +764,7 @@ const FullStackExpertise = () => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-20">
+    <section className="bg-white pt-12 sm:pt-16 md:pt-20 pb-4 sm:pb-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10 md:mb-12">
