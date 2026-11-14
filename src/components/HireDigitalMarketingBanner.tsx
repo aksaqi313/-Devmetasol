@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const HireDigitalMarketingBanner = () => {
   const marketingRoles = [
@@ -38,12 +38,14 @@ const HireDigitalMarketingBanner = () => {
             </ol>
 
             {/* Hire Marketers Button */}
-            <Link
-              to="/hire-an-expert"
+            <a
+              href="https://wa.me/923320409566"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#0f223d] hover:bg-[#1a365d] text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm md:text-base transition-colors duration-300 w-full sm:w-auto text-center"
             >
               Hire Marketers
-            </Link>
+            </a>
           </div>
 
           {/* Right Section - Icon */}

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const HireDevelopersBanner = () => {
   const developerTypes = [
@@ -35,12 +35,14 @@ const HireDevelopersBanner = () => {
             </ol>
 
             {/* Hire Developers Button */}
-            <Link
-              to="/hire-an-expert"
+            <a
+              href="https://wa.me/923320409566"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gray-900 hover:bg-gray-800 text-blue-400 font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-xs sm:text-sm md:text-base transition-colors duration-300 w-full sm:w-auto text-center"
             >
               Hire Developers
-            </Link>
+            </a>
           </div>
 
           {/* Right Section - Icon */}
