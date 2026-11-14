@@ -150,7 +150,6 @@ Devmetasol website/
 | `AboutHeroSection.tsx` | Hero banner for About Us |
 | `Devmetasol.tsx` | Shared company description block |
 | `CoreValues.tsx` | Company core values |
-| `CodeOfConduct.tsx` | Code of conduct |
 | `OurOffices.tsx` | Office locations display |
 | `Mission.tsx` | *(Currently commented out)* |
 | `Vision.tsx` | *(Currently commented out)* |

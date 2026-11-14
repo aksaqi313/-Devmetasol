@@ -1,10 +1,9 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import AboutHeroSection from "../components/AboutHeroSection";
 // import Vision from "../components/Vision";
 // import Mission from "../components/Mission";
 import Devmetasol from "../components/Devmetasol";
 import CoreValues from "../components/CoreValues";
-import CodeOfConduct from "../components/CodeOfConduct";
 // import MeetTheTeam from "../components/MeetTheTeam";
 import OurOffices from "../components/OurOffices";
 import AllFooter from "../components/AllFooter";
@@ -32,7 +31,6 @@ const AboutUs = () => {
       {/* <Mission /> */}
       <Devmetasol />
       <CoreValues />
-      <CodeOfConduct />
       {/* <MeetTheTeam /> */}
       <OurOffices />
       <AllFooter />
