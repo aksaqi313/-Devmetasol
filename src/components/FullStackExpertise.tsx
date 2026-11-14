@@ -764,7 +764,7 @@ const FullStackExpertise = () => {
   };
 
   return (
-    <section className="bg-white pt-12 sm:pt-16 md:pt-20 pb-4 sm:pb-6">
+    <section className="bg-white pt-12 sm:pt-16 md:pt-20 pb-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-10 md:mb-12">
