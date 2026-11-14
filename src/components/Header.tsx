@@ -402,12 +402,12 @@ const Header = () => {
             <div className="relative">
            
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 rounded-2xl flex items-center justify-center group-hover:from-blue-700 group-hover:via-indigo-700 group-hover:to-purple-800 transition-all duration-300 shadow-lg">
-                <span className="text-white font-extrabold text-xl sm:text-2xl">K</span>
+                <span className="text-white font-extrabold text-xl sm:text-2xl">D</span>
               </div>
               <div className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-3.5 sm:h-3.5 bg-green-500 rounded-full border-2 border-white"></div>
             </div>
             <span className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-              King<span className="text-blue-500 font-extrabold">TechSol</span>
+              Dev<span className="text-blue-500 font-extrabold">metasol</span>
             </span>
           </Link>
 {/* 
@@ -417,7 +417,7 @@ const Header = () => {
 >
   <img 
     src={Logo1} 
-    alt="KingTechSol Logo"
+    alt="Devmetasol Logo"
     className="h-16 sm:h-20 w-auto object-contain group-hover:opacity-90 transition-opacity duration-300"
   />
 </Link> */}
@@ -466,16 +466,6 @@ const Header = () => {
             }`}
           >
             Home
-          </Link>
-          <Link
-            to="/our-product"
-            className={`font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
-              isActive("/our-product")
-                ? "text-blue-600 bg-blue-50"
-                : "text-slate-700 hover:text-blue-600 hover:bg-blue-50"
-            }`}
-          >
-            Our Product
           </Link>
 
           {/* Services Dropdown */}
@@ -914,7 +904,7 @@ const Header = () => {
                     <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-green-500 rounded-full border-2 border-white"></div>
                   </div>
                   <span className="text-xl font-bold text-white">
-                    Dev<span className="text-blue-100 font-extrabold">MetaSol</span>
+                    Dev<span className="text-blue-100 font-extrabold">metasol</span>
                   </span>
                 </Link>
                 <button
@@ -944,7 +934,6 @@ const Header = () => {
                   {/* Menu Item Component */}
                   {[
                     { path: "/", label: "Home", icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" },
-                    { path: "/our-product", label: "Our Product", icon: "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" },
                     { path: "/services", label: "Services", icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
                     { path: "/hire-an-expert", label: "Hire An Expert", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" },
                     { path: "/case-studies", label: "Case Studies", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },

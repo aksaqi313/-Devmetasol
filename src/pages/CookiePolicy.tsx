@@ -11,8 +11,8 @@ const CookiePolicy = () => {
     <>
       <SEO
         title="Cookie Policy"
-        description="KingTechSol's Cookie Policy explains how we use cookies and similar tracking technologies on our website. Learn about cookie types and your choices."
-        keywords="cookie policy, cookies, tracking technologies, KingTechSol cookies, website cookies, cookie consent"
+        description="Devmetasol's Cookie Policy explains how we use cookies and similar tracking technologies on our website. Learn about cookie types and your choices."
+        keywords="cookie policy, cookies, tracking technologies, Devmetasol cookies, website cookies, cookie consent"
         canonicalUrl="/about-us/cookie-policy"
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -41,7 +41,7 @@ const CookiePolicy = () => {
                 more efficiently and provide information to website owners.
               </p>
               <p className="leading-relaxed">
-                KingTechSol uses cookies and similar tracking technologies to enhance your 
+                Devmetasol uses cookies and similar tracking technologies to enhance your 
                 browsing experience, analyze website traffic, and personalize content. This 
                 Cookie Policy explains how we use cookies and your choices regarding them.
               </p>
@@ -202,10 +202,12 @@ const CookiePolicy = () => {
               </p>
               <div className="bg-white rounded-lg p-6 mt-4">
                 <p className="leading-relaxed">
-                  <strong>KingTechSol</strong><br />
-                  Email: KingTechSol<br />
+                  <strong>Devmetasol</strong><br />
+                  Email: <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
                   Phone: +92 330 4527519<br />
-                  Address: Lahore, Pakistan
+                  WhatsApp: <a href="https://wa.me/923320409566" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">+92 332 0409566</a><br />
+                  Office 1: LUMS Incubation Center, Lahore, Pakistan<br />
+                  Office 2: Jumeirah Lake Towers, Dubai, UAE
                 </p>
               </div>
             </section>

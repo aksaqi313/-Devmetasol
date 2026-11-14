@@ -781,7 +781,7 @@ const FullStackExpertise = () => {
               Enterprise Solutions
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-slate-600 px-4 leading-relaxed">
-              KingTechsol leverages industry-leading frameworks, programming
+              Devmetasol leverages industry-leading frameworks, programming
               languages, and platforms to deliver robust, scalable, and secure
               enterprise applications that meet the highest standards of
               performance and reliability.

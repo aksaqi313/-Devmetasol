@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import SumatoERPImage from "../assets/sumato-erp-title.webp.bv.webp";
 
 const CaseStudiesGrid = () => {
@@ -193,13 +193,13 @@ const CaseStudiesGrid = () => {
               >
                 {/* Top Section - Logos */}
                 <div className="p-3 sm:p-4 flex justify-between items-start">
-                  {/* DevMetaSol Logo */}
+                  {/* Devmetasol Logo */}
                   <div className="flex items-center gap-1.5">
                     <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
                       <span className="text-white font-bold text-xs">D</span>
                     </div>
                     <span className="text-[10px] sm:text-xs font-semibold text-gray-800">
-                      KingTechSol
+                      Devmetasol
                     </span>
                   </div>
                   

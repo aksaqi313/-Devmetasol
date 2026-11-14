@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import AboutHeroSection from "../components/AboutHeroSection";
 // import Vision from "../components/Vision";
 // import Mission from "../components/Mission";
@@ -18,9 +18,9 @@ const AboutUs = () => {
   return (
     <>
       <SEO
-        title="About Us - KingTechSol Company Overview"
-        description="Learn about KingTechSol, a leading digital transformation company. Discover our vision, mission, core values, expert team, and global office locations."
-        keywords="about KingTechSol, company overview, digital transformation agency, software company, IT consulting firm, tech company, our team, company values"
+        title="About Us - Devmetasol Company Overview"
+        description="Learn about Devmetasol, a leading digital transformation company. Discover our vision, mission, core values, expert team, and global office locations."
+        keywords="about Devmetasol, company overview, digital transformation agency, software company, IT consulting firm, tech company, our team, company values"
         canonicalUrl="/about-us"
         breadcrumbs={[
           { name: 'Home', url: '/' },

@@ -11,8 +11,8 @@ const TermsAndConditions = () => {
     <>
       <SEO
         title="Terms and Conditions"
-        description="Read KingTechSol's Terms and Conditions. By using our website and services, you agree to be bound by these terms and provisions."
-        keywords="terms and conditions, terms of service, KingTechSol terms, legal agreement, service terms, user agreement"
+        description="Read Devmetasol's Terms and Conditions. By using our website and services, you agree to be bound by these terms and provisions."
+        keywords="terms and conditions, terms of service, Devmetasol terms, legal agreement, service terms, user agreement"
         canonicalUrl="/about-us/terms-and-conditions"
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -36,14 +36,14 @@ const TermsAndConditions = () => {
                 Agreement to Terms
               </h2>
               <p className="leading-relaxed">
-                By accessing and using KingTechSol's website and services, you accept and 
+                By accessing and using Devmetasol's website and services, you accept and 
                 agree to be bound by the terms and provision of this agreement. If you do 
                 not agree to abide by the above, please do not use this service.
               </p>
               <p className="leading-relaxed">
-                These Terms and Conditions govern your use of KingTechSol's digital services, 
+                These Terms and Conditions govern your use of Devmetasol's digital services, 
                 including but not limited to our website, software solutions, consulting 
-                services, and any other services provided by KingTechSol.
+                services, and any other services provided by Devmetasol.
               </p>
             </section>
 
@@ -52,7 +52,7 @@ const TermsAndConditions = () => {
                 Services Description
               </h2>
               <p className="leading-relaxed">
-                KingTechSol provides comprehensive digital transformation services including:
+                Devmetasol provides comprehensive digital transformation services including:
               </p>
               <ul className="list-disc pl-6 space-y-2 leading-relaxed">
                 <li>Custom software development and enterprise solutions</li>
@@ -73,15 +73,15 @@ const TermsAndConditions = () => {
                 Intellectual Property Rights
               </h2>
               <p className="leading-relaxed">
-                All content, features, and functionality of KingTechSol's services, including 
+                All content, features, and functionality of Devmetasol's services, including 
                 but not limited to text, graphics, logos, icons, images, audio clips, digital 
-                downloads, and software, are the exclusive property of KingTechSol or its 
+                downloads, and software, are the exclusive property of Devmetasol or its 
                 content suppliers and are protected by international copyright, trademark, 
                 patent, trade secret, and other intellectual property laws.
               </p>
               <p className="leading-relaxed">
                 Unless otherwise specified in a written agreement, all intellectual property 
-                rights in custom-developed software and solutions remain with KingTechSol 
+                rights in custom-developed software and solutions remain with Devmetasol 
                 until full payment is received, at which point ownership may transfer as 
                 specified in the service agreement.
               </p>
@@ -92,7 +92,7 @@ const TermsAndConditions = () => {
                 User Obligations
               </h2>
               <p className="leading-relaxed">
-                When using KingTechSol's services, you agree to:
+                When using Devmetasol's services, you agree to:
               </p>
               <ul className="list-disc pl-6 space-y-2 leading-relaxed">
                 <li>Provide accurate, current, and complete information</li>
@@ -109,7 +109,7 @@ const TermsAndConditions = () => {
                 Payment Terms
               </h2>
               <p className="leading-relaxed">
-                Payment terms for KingTechSol's services are specified in individual service 
+                Payment terms for Devmetasol's services are specified in individual service 
                 agreements. Generally:
               </p>
               <ul className="list-disc pl-6 space-y-2 leading-relaxed">
@@ -125,14 +125,14 @@ const TermsAndConditions = () => {
                 Limitation of Liability
               </h2>
               <p className="leading-relaxed">
-                KingTechSol shall not be liable for any indirect, incidental, special, 
+                Devmetasol shall not be liable for any indirect, incidental, special, 
                 consequential, or punitive damages, including but not limited to loss of 
                 profits, data, use, goodwill, or other intangible losses, resulting from your 
                 use of our services.
               </p>
               <p className="leading-relaxed">
                 Our total liability for any claims arising from or related to our services 
-                shall not exceed the amount paid by you to KingTechSol in the twelve (12) 
+                shall not exceed the amount paid by you to Devmetasol in the twelve (12) 
                 months preceding the claim.
               </p>
             </section>
@@ -142,7 +142,7 @@ const TermsAndConditions = () => {
                 Confidentiality
               </h2>
               <p className="leading-relaxed">
-                KingTechSol maintains strict confidentiality regarding all client information, 
+                Devmetasol maintains strict confidentiality regarding all client information, 
                 business data, and proprietary information shared during the course of our 
                 engagement. We implement industry-standard security measures to protect 
                 confidential information and comply with applicable data protection 
@@ -188,10 +188,12 @@ const TermsAndConditions = () => {
               </p>
               <div className="bg-white rounded-lg p-6 mt-4">
                 <p className="leading-relaxed">
-                  <strong>KingTechSol</strong><br />
-                  Email: infomeernaib47@gmail.com<br />
+                  <strong>Devmetasol</strong><br />
+                  Email: <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
                   Phone: +92 330 4527519<br />
-                  Address: Lahore, Pakistan
+                  WhatsApp: <a href="https://wa.me/923320409566" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">+92 332 0409566</a><br />
+                  Office 1: LUMS Incubation Center, Lahore, Pakistan<br />
+                  Office 2: Jumeirah Lake Towers, Dubai, UAE
                 </p>
               </div>
             </section>

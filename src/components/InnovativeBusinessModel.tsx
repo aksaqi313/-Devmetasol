@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 const InnovativeBusinessModel = () => {
   return (
@@ -14,7 +14,7 @@ const InnovativeBusinessModel = () => {
           {/* Body Text */}
           <div className="space-y-4 mb-8">
             <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-              KingTechSol specializes in developing innovative business models that ensure 
+              Devmetasol specializes in developing innovative business models that ensure 
               sustainable growth and competitive advantage. We create customized enterprise 
               solutions precisely tailored to your unique business requirements, industry 
               dynamics, and strategic objectives.

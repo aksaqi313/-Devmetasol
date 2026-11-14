@@ -11,8 +11,8 @@ const PrivacyPolicy = () => {
     <>
       <SEO
         title="Privacy Policy"
-        description="KingTechSol's Privacy Policy explains how we collect, use, disclose, and safeguard your information. Learn about our data protection practices and your rights."
-        keywords="privacy policy, data protection, KingTechSol privacy, personal data, GDPR, data security, information collection"
+        description="Devmetasol's Privacy Policy explains how we collect, use, disclose, and safeguard your information. Learn about our data protection practices and your rights."
+        keywords="privacy policy, data protection, Devmetasol privacy, personal data, GDPR, data security, information collection"
         canonicalUrl="/about-us/privacy-policy"
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                 Introduction
               </h2>
               <p className="leading-relaxed">
-                KingTechSol ("we," "our," or "us") is committed to protecting your privacy. 
+                Devmetasol ("we," "our," or "us") is committed to protecting your privacy. 
                 This Privacy Policy explains how we collect, use, disclose, and safeguard 
                 your information when you visit our website, use our services, or interact 
                 with us as a digital transformation agency.
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
                 Personal Information
               </h3>
               <p className="leading-relaxed">
-                When you engage with KingTechSol, we may collect:
+                When you engage with Devmetasol, we may collect:
               </p>
               <ul className="list-disc pl-6 space-y-2 leading-relaxed">
                 <li>Name, email address, phone number, and mailing address</li>
@@ -127,7 +127,7 @@ const PrivacyPolicy = () => {
                 Data Security
               </h2>
               <p className="leading-relaxed">
-                KingTechSol implements industry-standard security measures to protect your 
+                Devmetasol implements industry-standard security measures to protect your 
                 personal information from unauthorized access, alteration, disclosure, or 
                 destruction. These measures include:
               </p>
@@ -226,10 +226,11 @@ const PrivacyPolicy = () => {
               </p>
               <div className="bg-white rounded-lg p-6 mt-4">
                 <p className="leading-relaxed">
-                  <strong>KingTechSol</strong><br />
-                  Email: KingTechSol<br />
+                  <strong>Devmetasol</strong><br />
+                  Email: <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
                   Phone: +92 330 4527519<br />
-                  Address: Lahore, Pakistan
+                  Office 1: LUMS Incubation Center, Lahore, Pakistan<br />
+                  Office 2: Jumeirah Lake Towers, Dubai, UAE
                 </p>
               </div>
             </section>

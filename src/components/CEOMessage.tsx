@@ -14,18 +14,18 @@ const CEOMessage = () => {
             <div className="space-y-4 sm:space-y-6">
               {/* Heading */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900">
-                Message From the <span className="text-[#2629d9]">CEO</span>
+                Message From the <span className="text-[#059669]">CEO</span>
               </h2>
 
               {/* Quotation Mark Icon */}
-              {/* <div className="text-[#2629d9] text-5xl sm:text-6xl md:text-7xl font-serif leading-none">
+              {/* <div className="text-[#059669] text-5xl sm:text-6xl md:text-7xl font-serif leading-none">
                 "
               </div> */}
 
               {/* Body Text */}
               <div className="space-y-3 sm:space-y-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
                 <p>
-                  At KingTechSol, our mission extends beyond delivering
+                  At Devmetasol, our mission extends beyond delivering
                   exceptional digital solutions—we are committed to forging
                   strategic partnerships with our clients. Through years of
                   experience, we have refined our methodologies to help
@@ -60,10 +60,10 @@ const CEOMessage = () => {
                       onError={() => setImageError(true)}
                     />
                   ) : (
-                    <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] bg-gradient-to-br from-blue-100 via-blue-50 to-indigo-100 flex items-center justify-center border-2 border-dashed border-[#2629d9]">
+                    <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] bg-gradient-to-br from-blue-100 via-blue-50 to-indigo-100 flex items-center justify-center border-2 border-dashed border-[#059669]">
                       <div className="text-center text-slate-600 px-4">
                         <svg
-                          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4 text-[#2629d9]"
+                          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4 text-[#059669]"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ const CEOMessage = () => {
                             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                           />
                         </svg>
-                        <p className="text-xs sm:text-sm font-semibold text-[#2629d9] mb-1">
+                        <p className="text-xs sm:text-sm font-semibold text-[#059669] mb-1">
                           CEO Portrait
                         </p>
                         <p className="text-xs text-slate-500 px-2 text-center">

@@ -138,8 +138,8 @@ const ScheduleCall = () => {
     <>
       <SEO
         title="Schedule a Call - Book a Consultation"
-        description="Schedule a free consultation call with KingTechSol's experts. Discuss your software development, digital transformation, or IT consulting needs with our team."
-        keywords="schedule call, book consultation, free consultation, KingTechSol consultation, software development meeting, IT consulting call"
+        description="Schedule a free consultation call with Devmetasol's experts. Discuss your software development, digital transformation, or IT consulting needs with our team."
+        keywords="schedule call, book consultation, free consultation, Devmetasol consultation, software development meeting, IT consulting call"
         canonicalUrl="/schedule-call"
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -155,7 +155,7 @@ const ScheduleCall = () => {
               <span className="text-white font-bold text-xl sm:text-2xl">D</span>
             </div>
             <span className="text-blue-600 font-bold text-xl sm:text-2xl">
-              KingTechSol
+              Devmetasol
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3">

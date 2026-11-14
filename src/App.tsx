@@ -3,7 +3,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import OurProduct from "./pages/OurProduct";
 import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
@@ -27,6 +26,7 @@ import StaffAugmentation from "./pages/StaffAugmentation";
 import ServiceDetail from "./pages/ServiceDetail";
 import ExpertDetail from "./pages/ExpertDetail";
 import NotFound from "./pages/NotFound";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 function App() {
   return (
@@ -35,7 +35,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/our-product" element={<OurProduct />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
@@ -97,6 +96,8 @@ function App() {
           pauseOnHover
           theme="light"
         />
+
+        <ChatbotWidget />
       </div>
     </Router>
   );

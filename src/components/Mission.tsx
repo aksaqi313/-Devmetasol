@@ -1,4 +1,4 @@
-// Mission.jsx
+﻿// Mission.jsx
 import CustomSoftwareSolutions from "../assets/profileimage2.jpg";
 
 const Mission = () => {
@@ -35,7 +35,7 @@ const Mission = () => {
 
               <div>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  KingTechSol is committed to providing comprehensive end-to-end
+                  Devmetasol is committed to providing comprehensive end-to-end
                   services. Our professionals guide clients through the complete
                   journey from strategic ideation and planning to solution
                   delivery and ongoing maintenance. We enable businesses and

@@ -4,17 +4,17 @@ const OfficesMap = () => {
   const offices = [
     { 
       name: "Lahore, Pakistan", 
-      address: "Lahore Division, Qazi Muhammad Isa Road, Faisal Town, Punjab 55800, Pakistan",
-      latitude: "31.475470",
-      longitude: "74.304550",
-      coordinates: "N 31° 28' 31.691'' / E 74° 18' 16.38''"
+      address: "Office 1: LUMS Incubation Center, Lahore, Pakistan",
+      latitude: "31.470700",
+      longitude: "74.410100",
+      coordinates: "N 31° 28' 14.52'' / E 74° 24' 36.36''"
     },
     { 
       name: "Dubai, UAE", 
-      address: "Dubai Marina, Business Bay, Dubai, United Arab Emirates",
-      latitude: "25.077200",
-      longitude: "55.139400",
-      coordinates: "N 25° 4' 37.92'' / E 55° 8' 21.84''"
+      address: "Office 2: Jumeirah Lake Towers, Dubai, UAE",
+      latitude: "25.078600",
+      longitude: "55.148500",
+      coordinates: "N 25° 4' 42.96'' / E 55° 8' 54.60''"
     },
   ];
 
@@ -90,14 +90,14 @@ const OfficesMap = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title={`KingTechSol Office Location - ${selectedOffice.name}`}
+                title={`Devmetasol Office Location - ${selectedOffice.name}`}
                 className="w-full"
               ></iframe>
             </div>
             {/* Map Info Card */}
             <div className="mt-2 bg-white rounded-lg shadow-md p-4 border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                KingTechSol - {selectedOffice.name}
+                Devmetasol - {selectedOffice.name}
               </h3>
               <p className="text-gray-600 text-sm mb-3">
                 {selectedOffice.address}

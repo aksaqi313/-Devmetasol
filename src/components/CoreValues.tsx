@@ -1,4 +1,4 @@
-
+﻿
 const CoreValues = () => {
   const coreValues = [
     {
@@ -29,7 +29,7 @@ const CoreValues = () => {
     {
       title: "Integrity & Ethics",
       description:
-        "KingTechSol maintains the highest standards of ethical conduct and integrity in all business practices, reflecting our core brand values and strategic perspective in every client engagement.",
+        "Devmetasol maintains the highest standards of ethical conduct and integrity in all business practices, reflecting our core brand values and strategic perspective in every client engagement.",
     },
   ];
 

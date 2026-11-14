@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
@@ -12,7 +12,7 @@ const StaffAugmentation = () => {
     <>
       <ServiceSEO
         serviceName="Staff Augmentation"
-        description="KingTechSol provides flexible staff augmentation services. Scale your development team with skilled developers, designers, and IT professionals who integrate seamlessly into your workflow."
+        description="Devmetasol provides flexible staff augmentation services. Scale your development team with skilled developers, designers, and IT professionals who integrate seamlessly into your workflow."
         canonicalUrl="/services/staff-augmentation"
       />
       <div className="bg-white py-16 md:py-20">
@@ -30,7 +30,7 @@ const StaffAugmentation = () => {
         imageOnLeft={false}
         title="Flexible Staff Augmentation Services"
         paragraphs={[
-          "KingTechSol provides staff augmentation services that allow you to scale your development team quickly and efficiently. Our professionals are vetted, experienced, and ready to contribute from day one, seamlessly integrating into your existing workflows and culture.",
+          "Devmetasol provides staff augmentation services that allow you to scale your development team quickly and efficiently. Our professionals are vetted, experienced, and ready to contribute from day one, seamlessly integrating into your existing workflows and culture.",
           "We offer flexible engagement models including full-time, part-time, and project-based arrangements. Whether you need frontend developers, backend engineers, DevOps specialists, or full-stack experts, we match you with the right talent for your specific requirements.",
           "Our staff augmentation services eliminate the overhead of permanent hiring while providing access to top-tier talent. We handle recruitment, onboarding, and management, allowing you to focus on your core business objectives."
         ]}

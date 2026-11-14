@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import AllFooter from "../components/AllFooter";
 import SEO from "../components/SEO";
 
@@ -7,7 +7,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <SEO
         title="404 - Page Not Found"
-        description="The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect. Return to KingTechSol homepage."
+        description="The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect. Return to Devmetasol homepage."
         noindex={true}
       />
       <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">

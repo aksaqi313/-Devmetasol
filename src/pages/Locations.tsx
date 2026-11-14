@@ -10,7 +10,7 @@ const Locations = () => {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'KingTechSol',
+    name: 'Devmetasol',
     url: 'https://devmetasol.com',
     logo: 'https://devmetasol.com/logo.png',
     contactPoint: {
@@ -21,14 +21,14 @@ const Locations = () => {
     address: [
       {
         '@type': 'PostalAddress',
-        streetAddress: 'Qazi Muhammad Isa Road, Faisal Town',
+        streetAddress: 'LUMS Incubation Center',
         addressLocality: 'Lahore',
         addressRegion: 'Punjab',
-        postalCode: '55800',
         addressCountry: 'PK'
       },
       {
         '@type': 'PostalAddress',
+        streetAddress: 'Jumeirah Lake Towers',
         addressLocality: 'Dubai',
         addressCountry: 'AE'
       }
@@ -39,10 +39,10 @@ const Locations = () => {
     {
       country: "Pakistan",
       city: "Lahore",
-      address: "Lahore Division, Qazi Muhammad Isa Road, Faisal Town, Punjab 55800, Pakistan",
-      latitude: "31.475470",
-      longitude: "74.304550",
-      coordinates: "N 31° 28' 31.691'' / E 74° 18' 16.38''",
+      address: "Office 1: LUMS Incubation Center, Lahore, Pakistan",
+      latitude: "31.470700",
+      longitude: "74.410100",
+      coordinates: "N 31° 28' 14.52'' / E 74° 24' 36.36''",
       description: "Our headquarters and primary development center, serving as the hub for our global operations.",
       services: ["Software Development", "Digital Transformation", "Consulting Services"]
     },
@@ -70,10 +70,10 @@ const Locations = () => {
     {
       country: "United Arab Emirates",
       city: "Dubai",
-      address: "Dubai Marina, Business Bay, Dubai, United Arab Emirates",
-      latitude: "25.077200",
-      longitude: "55.139400",
-      coordinates: "N 25° 4' 37.92'' / E 55° 8' 21.84''",
+      address: "Office 2: Jumeirah Lake Towers, Dubai, UAE",
+      latitude: "25.078600",
+      longitude: "55.148500",
+      coordinates: "N 25° 4' 42.96'' / E 55° 8' 54.60''",
       description: "Regional headquarters for the Middle East, providing comprehensive digital transformation services to the region.",
       services: ["Digital Marketing", "Enterprise Solutions", "Regional Support"]
     },
@@ -96,9 +96,9 @@ const Locations = () => {
   return (
     <>
       <SEO
-        title="Our Locations - KingTechSol Global Offices"
-        description="KingTechSol operates globally with offices in Pakistan, USA, Canada, UAE, Saudi Arabia, and Portugal. Find our office locations and contact information."
-        keywords="KingTechSol locations, global offices, Lahore office, Dubai office, software company locations, IT company offices, KingTechSol contact"
+        title="Our Locations - Devmetasol Global Offices"
+        description="Devmetasol operates globally with offices in Pakistan, USA, Canada, UAE, Saudi Arabia, and Portugal. Find our office locations and contact information."
+        keywords="Devmetasol locations, global offices, Lahore office, Dubai office, software company locations, IT company offices, Devmetasol contact"
         canonicalUrl="/locations"
         structuredData={localBusinessSchema}
         breadcrumbs={[
@@ -113,7 +113,7 @@ const Locations = () => {
               Our <span className="text-blue-500">Locations</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              KingTechSol operates globally with offices and teams strategically located 
+              Devmetasol operates globally with offices and teams strategically located 
               across multiple continents to serve our clients worldwide.
             </p>
           </div>
@@ -125,7 +125,7 @@ const Locations = () => {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 With offices in key markets across North America, Europe, the Middle East, 
-                and Asia, KingTechSol delivers world-class digital transformation services 
+                and Asia, Devmetasol delivers world-class digital transformation services 
                 while maintaining deep understanding of local business cultures and 
                 requirements. Our distributed team model enables us to provide 24/7 support 
                 and seamless collaboration across time zones.
@@ -203,8 +203,9 @@ const Locations = () => {
                   <strong>Lahore, Pakistan</strong>
                 </p>
                 <p className="text-gray-600 text-sm">
-                  Email: infomeernaib47@gmail.com<br />
-                  Phone: +92 330 4527519
+                  Email: <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
+                  Phone: +92 330 4527519<br />
+                  WhatsApp: <a href="https://wa.me/923320409566" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">+92 332 0409566</a>
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6">
@@ -215,8 +216,9 @@ const Locations = () => {
                   <strong>Global Support</strong>
                 </p>
                 <p className="text-gray-600 text-sm">
-                  Email: infomeernaib47@gmail.com<br />
-                  Phone: +92 330 4527519
+                  Email: <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
+                  Phone: +92 330 4527519<br />
+                  WhatsApp: <a href="https://wa.me/923320409566" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">+92 332 0409566</a>
                 </p>
               </div>
             </div>

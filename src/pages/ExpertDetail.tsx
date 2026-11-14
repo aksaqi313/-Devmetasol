@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import AllFooter from "../components/AllFooter";
 import SEO from "../components/SEO";
@@ -32,7 +32,7 @@ const ExpertDetail = () => {
     <div className="min-h-screen bg-white pt-16 sm:pt-20">
       <SEO
         title={`Hire ${title} - Expert Professionals`}
-        description={`Hire skilled ${title} professionals from KingTechSol. Get expert ${title.toLowerCase()} talent for your projects with flexible engagement models.`}
+        description={`Hire skilled ${title} professionals from Devmetasol. Get expert ${title.toLowerCase()} talent for your projects with flexible engagement models.`}
         canonicalUrl={`/hire-an-expert/${expertName}`}
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -54,10 +54,10 @@ const ExpertDetail = () => {
           <div className="prose prose-lg max-w-none">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 sm:p-8 mb-8">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Why Hire a {title} from KingTechSol?
+                Why Hire a {title} from Devmetasol?
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4 text-base sm:text-lg">
-                Looking to hire a skilled {title.toLowerCase()}? KingTechSol provides access to top-tier 
+                Looking to hire a skilled {title.toLowerCase()}? Devmetasol provides access to top-tier 
                 professionals who are ready to join your team and contribute to your project's success. 
                 Our experts are carefully vetted through a comprehensive screening process and bring years 
                 of industry experience, proven expertise, and a commitment to excellence.

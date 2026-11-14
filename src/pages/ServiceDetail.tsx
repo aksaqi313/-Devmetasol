@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import AllFooter from "../components/AllFooter";
 import SEO from "../components/SEO";
@@ -26,7 +26,7 @@ const ServiceDetail = () => {
     <div className="min-h-screen bg-white pt-16 sm:pt-20">
       <SEO
         title={`${title} Services`}
-        description={`KingTechSol provides professional ${title} services. Learn more about our ${title.toLowerCase()} solutions and how we can help your business grow.`}
+        description={`Devmetasol provides professional ${title} services. Learn more about our ${title.toLowerCase()} solutions and how we can help your business grow.`}
         canonicalUrl={`/services/${serviceName}`}
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -51,7 +51,7 @@ const ServiceDetail = () => {
                 About {title}
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4 text-base sm:text-lg">
-                At KingTechSol, we specialize in delivering exceptional {title.toLowerCase()} services 
+                At Devmetasol, we specialize in delivering exceptional {title.toLowerCase()} services 
                 tailored to meet your unique business needs. Our team of experienced professionals 
                 combines technical expertise with innovative solutions to help you achieve your goals 
                 and drive measurable business results.

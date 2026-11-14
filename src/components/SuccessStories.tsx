@@ -1,13 +1,13 @@
-// SuccessStories.tsx
+﻿// SuccessStories.tsx
 const SuccessStories = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "KingTechSol ERP",
+      title: "Devmetasol ERP",
       subtitle: "Project Case Study",
       description: "",
       logos: [
-        { name: "KingTechSol", icon: "D" },
+        { name: "Devmetasol", icon: "D" },
         { name: "ERP", icon: "ERP" },
       ],
     },
@@ -18,7 +18,7 @@ const SuccessStories = () => {
       description: "Delivering Communication Solutions without compromise.",
       fullTitle: "Electrical Installation Service App",
       logos: [
-        { name: "KingTechSol", icon: "D" },
+        { name: "Devmetasol", icon: "D" },
         { name: "Appselec", icon: "∞" },
       ],
     },
@@ -28,7 +28,7 @@ const SuccessStories = () => {
       subtitle: "Project Case Study",
       description: "Delivering Communication Solutions without compromise.",
       logos: [
-        { name: "KingTechSol", icon: "D" },
+        { name: "Devmetasol", icon: "D" },
         { name: "GROUNDWORKS", icon: "JJ" },
       ],
     },
@@ -39,7 +39,7 @@ const SuccessStories = () => {
       description: "",
       fullTitle: "QRIP IT SOFTWARE",
       logos: [
-        { name: "KingTechSol", icon: "D" },
+        { name: "Devmetasol", icon: "D" },
         { name: "QRIP IT", icon: "QR" },
       ],
     },
@@ -87,7 +87,7 @@ const SuccessStories = () => {
                       D
                     </div>
                     <span className="text-sm font-medium text-slate-800">
-                      KingTechSol
+                      Devmetasol
                     </span>
                   </div>
                   {study.id === 1 && (

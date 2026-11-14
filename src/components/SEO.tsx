@@ -13,30 +13,30 @@ interface SEOProps {
   breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
-const BASE_URL = 'https://devmetasol.com';
+const BASE_URL = import.meta.env.VITE_SITE_URL || 'https://devmetasol.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
-const SITE_NAME = 'DevMetaSol';
+const SITE_NAME = 'Devmetasol';
 
 // Organization Schema
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'KingTechSol',
+  name: 'Devmetasol',
   url: BASE_URL,
   logo: `${BASE_URL}/logo.png`,
-  description: 'Leading digital transformation and software development company delivering enterprise-grade solutions.',
+  description: 'Full-service software agency: full-stack development, staff augmentation, and digital marketing with content production.',
   foundingDate: '2020',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+92-330-4527519',
     contactType: 'customer service',
-    email: 'infomeernaib47@gmail.com',
+    email: 'careers@devmetasol.com',
     availableLanguage: ['English'],
   },
   sameAs: [
-    'https://www.linkedin.com/company/devmetasol',
-    'https://twitter.com/devmetasol',
-    'https://www.facebook.com/devmetasol',
+    'https://www.linkedin.com/company/Devmetasol',
+    'https://twitter.com/Devmetasol',
+    'https://www.facebook.com/Devmetasol',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -74,7 +74,7 @@ const generateBreadcrumbSchema = (breadcrumbs: Array<{ name: string; url: string
 export default function SEO({
   title,
   description,
-  keywords = 'software development, digital transformation, cloud services, web development, mobile app development, KingTechSol, enterprise solutions, IT consulting',
+  keywords = 'software development, digital transformation, cloud services, web development, mobile app development, Devmetasol, enterprise solutions, IT consulting',
   canonicalUrl,
   ogImage = DEFAULT_OG_IMAGE,
   ogType = 'website',
@@ -83,7 +83,7 @@ export default function SEO({
   structuredData,
   breadcrumbs,
 }: SEOProps) {
-  const fullTitle = title.includes('KingTechSol') ? title : `${title} | KingTechSol`;
+  const fullTitle = title.includes('Devmetasol') ? title : `${title} | Devmetasol`;
   const canonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : undefined;
 
   // Combine all structured data
@@ -101,7 +101,7 @@ export default function SEO({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="KingTechSol" />
+      <meta name="author" content="Devmetasol" />
 
       {/* Robots */}
       <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
@@ -131,8 +131,8 @@ export default function SEO({
       <meta name="twitter:creator" content="@devmetasol" />
 
       {/* Additional SEO Meta Tags */}
-      <meta name="theme-color" content="#1e3a5f" />
-      <meta name="msapplication-TileColor" content="#1e3a5f" />
+      <meta name="theme-color" content="#064e3b" />
+      <meta name="msapplication-TileColor" content="#064e3b" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="format-detection" content="telephone=no" />
@@ -164,7 +164,7 @@ export const ServiceSEO = ({
     description: description,
     provider: {
       '@type': 'Organization',
-      name: 'DevMetaSol',
+      name: 'Devmetasol',
       url: BASE_URL,
     },
     areaServed: 'Worldwide',
@@ -251,7 +251,7 @@ export const ArticleSEO = ({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'DevMetaSol',
+      name: 'Devmetasol',
       logo: {
         '@type': 'ImageObject',
         url: `${BASE_URL}/logo.png`,

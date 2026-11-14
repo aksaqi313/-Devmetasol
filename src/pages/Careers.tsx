@@ -11,10 +11,10 @@ const Careers = () => {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
     title: 'Multiple Positions Available',
-    description: 'Join KingTechSol team - We are hiring developers, designers, and marketing specialists.',
+    description: 'Join Devmetasol team - We are hiring developers, designers, and marketing specialists.',
     hiringOrganization: {
       '@type': 'Organization',
-      name: 'KingTechSol',
+      name: 'Devmetasol',
       sameAs: 'https://devmetasol.com'
     },
     jobLocation: {
@@ -88,9 +88,9 @@ const Careers = () => {
   return (
     <>
       <SEO
-        title="Careers at KingTechSol - Join Our Team"
-        description="Build your career with KingTechSol, a leading digital transformation agency. Explore job openings for developers, designers, project managers, and marketing specialists. Remote work available."
-        keywords="KingTechSol careers, tech jobs, software developer jobs, UI UX designer jobs, remote work, IT careers, digital marketing jobs, project manager positions"
+        title="Careers at Devmetasol - Join Our Team"
+        description="Build your career with Devmetasol, a leading digital transformation agency. Explore job openings for developers, designers, project managers, and marketing specialists. Remote work available."
+        keywords="Devmetasol careers, tech jobs, software developer jobs, UI UX designer jobs, remote work, IT careers, digital marketing jobs, project manager positions"
         canonicalUrl="/about-us/careers"
         structuredData={jobPostingSchema}
         breadcrumbs={[
@@ -103,7 +103,7 @@ const Careers = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Join the <span className="text-blue-500">KingTechSol</span> Team
+              Join the <span className="text-blue-500">Devmetasol</span> Team
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Build your career with a leading digital transformation agency. We're looking 
@@ -113,12 +113,12 @@ const Careers = () => {
 
           <section className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              Why Work at KingTechSol?
+              Why Work at Devmetasol?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At KingTechSol, we're not just building software—we're transforming 
+                  At Devmetasol, we're not just building software—we're transforming 
                   businesses and shaping the future of digital innovation. As a member of 
                   our team, you'll work on challenging projects for enterprise clients, 
                   collaborate with industry experts, and contribute to cutting-edge 
@@ -204,9 +204,12 @@ const Careers = () => {
                         </span>
                       </div>
                     </div>
-                    <button className="mt-4 md:mt-0 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+                    <a
+                      href={`mailto:careers@devmetasol.com?subject=${encodeURIComponent(`Job Application: ${position.title}`)}&body=${encodeURIComponent(`Hi Devmetasol Team,\n\nI am applying for the ${position.title} role.\n\nPlease find my resume attached.\n\nBest regards,`)}`}
+                      className="mt-4 md:mt-0 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors text-center"
+                    >
                       Apply Now
-                    </button>
+                    </a>
                   </div>
                   <p className="text-gray-700 leading-relaxed">{position.description}</p>
                 </div>
@@ -219,12 +222,16 @@ const Careers = () => {
               Don't See a Role That Fits?
             </h2>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto leading-relaxed">
-              We're always looking for talented individuals to join our team. Send us your 
-              resume and let us know how you can contribute to KingTechSol's mission.
+              We're always looking for talented individuals to join our team. Send your 
+              resume to <a href="mailto:careers@devmetasol.com" className="text-blue-600 font-semibold hover:underline">careers@devmetasol.com</a> and 
+              let us know how you can contribute to Devmetasol's mission.
             </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+            <a
+              href="mailto:careers@devmetasol.com?subject=General%20Application%20-%20Devmetasol"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
+            >
               Submit General Application
-            </button>
+            </a>
           </section>
         </div>
       </div>

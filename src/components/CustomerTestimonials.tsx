@@ -10,19 +10,19 @@ const CustomerTestimonials = () => {
   const testimonials = [
     {
       rating: 5,
-      text: "I'm glad I chose KingTechSol for software development services. The team was competent and highly skilled & delivered error-free solutions.",
+      text: "I'm glad I chose Devmetasol for software development services. The team was competent and highly skilled & delivered error-free solutions.",
       name: "Hassan Al-Farsi",
       avatar: "👨‍💼", // Placeholder for avatar - you can replace with actual images
     },
     {
       rating: 5,
-      text: "Looking for a trustworthy digital solutions provider? I have worked with KingTechSol & I must say they have highly skilled team members who understand your requirements and come up with innovative ideas.",
+      text: "Looking for a trustworthy digital solutions provider? I have worked with Devmetasol & I must say they have highly skilled team members who understand your requirements and come up with innovative ideas.",
       name: "Sarah Mitchell",
       avatar: "👩‍💼", // Placeholder for avatar
     },
     {
       rating: 5,
-      text: "Being a long-term client of KingTechSol, I would like to share my experience of QA & Support services. The team was fantastic as they were efficient and fixed all the bugs. They meet fast-changing customer demands. Highly recommended!!!",
+      text: "Being a long-term client of Devmetasol, I would like to share my experience of QA & Support services. The team was fantastic as they were efficient and fixed all the bugs. They meet fast-changing customer demands. Highly recommended!!!",
       name: "Emily Carter",
       avatar: "👩‍💼", // Placeholder for avatar
     },
@@ -34,9 +34,27 @@ const CustomerTestimonials = () => {
     },
     {
       rating: 5,
-      text: "KingTechSol transformed our business with their innovative approach and cutting-edge solutions. Highly recommended!",
+      text: "Devmetasol transformed our business with their innovative approach and cutting-edge solutions. Highly recommended!",
       name: "Lisa Anderson",
       avatar: "👩‍💼",
+    },
+    {
+      rating: 5,
+      text: "Devmetasol's dedicated engineering team integrated seamlessly into our sprint cycles. Their full-stack expertise helped us ship our SaaS platform two months ahead of schedule.",
+      name: "David Chen",
+      avatar: "👨‍💻",
+    },
+    {
+      rating: 5,
+      text: "Their digital marketing and UI/UX redesign doubled our conversion rates within 60 days. The ROI on working with Devmetasol has been extraordinary.",
+      name: "Amira Rahman",
+      avatar: "👩‍💼",
+    },
+    {
+      rating: 5,
+      text: "Outstanding cloud migration and DevOps support. Zero downtime during our database transition and our AWS infrastructure costs dropped by 35%.",
+      name: "Marcus Vogt",
+      avatar: "👨‍💼",
     },
   ];
 
@@ -163,17 +181,17 @@ const CustomerTestimonials = () => {
   }, [maxScrollPosition]);
 
   return (
-    <section className="bg-white">
-      <div className="container mx-auto">
+    <section className="bg-slate-100/70 py-12 sm:py-16 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-4 text-slate-900">
               What Our <span className="text-blue-500">Customers</span> Say
               About Us
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-              KingTechSol is committed to delivering results that exceed client
+              Devmetasol is committed to delivering results that exceed client
               expectations. Through our dedication and extensive industry
               experience, we have established enduring partnerships with
               organizations worldwide. The following testimonials demonstrate
@@ -186,7 +204,7 @@ const CustomerTestimonials = () => {
           <div className="relative">
             <div
               ref={scrollContainerRef}
-              className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar"
+              className="flex gap-6 overflow-x-auto py-6 px-4 snap-x snap-mandatory hide-scrollbar"
               style={{
                 scrollbarWidth: "none",
                 msOverflowStyle: "none",
@@ -196,9 +214,9 @@ const CustomerTestimonials = () => {
                 <div
                   key={index}
                   data-card-index={index}
-                  className="flex-shrink-0 w-[85%] sm:w-[calc(33.333%-16px)] md:w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] snap-start"
+                  className="flex-shrink-0 w-[85%] sm:w-[calc(33.333%-16px)] md:w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] snap-start py-3 px-1"
                 >
-                  <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 h-full min-h-[240px] sm:min-h-[280px] flex flex-col shadow-sm hover:shadow-md transition-shadow">
+                  <div className="bg-white rounded-2xl p-6 sm:p-7 md:p-8 h-full min-h-[260px] sm:min-h-[290px] flex flex-col border border-slate-200/90 shadow-[0_16px_36px_-6px_rgba(15,23,42,0.14),0_6px_12px_-4px_rgba(15,23,42,0.08)] hover:shadow-[0_25px_50px_-10px_rgba(15,23,42,0.22),0_10px_18px_-4px_rgba(15,23,42,0.12)] hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1.5">
                     {/* Rating Stars */}
                     <div className="flex gap-1 mb-3 sm:mb-4">
                       {Array.from({ length: testimonial.rating }).map(
@@ -220,8 +238,8 @@ const CustomerTestimonials = () => {
                     </p>
 
                     {/* Customer Profile */}
-                    <div className="flex items-center gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-gray-100">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0">
+                    <div className="flex items-center gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-slate-100">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-xl sm:text-2xl flex-shrink-0 shadow-xs">
                         {testimonial.avatar}
                       </div>
                       <div>

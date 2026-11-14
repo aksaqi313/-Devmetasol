@@ -1,4 +1,4 @@
-// Services.tsx
+﻿// Services.tsx
 import ServicesHero from "../components/ServicesHero";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import NextGenTechnologiesSimple from "../components/NextGenTechnologiesSimple";
@@ -15,7 +15,7 @@ const Services = () => {
     <div className="min-h-screen bg-white pt-4 sm:pt-6 md:pt-8">
       <SEO
         title="Our Services - Software Development & Digital Solutions"
-        description="Explore KingTechSol's comprehensive services including custom software development, cloud infrastructure, digital marketing, QA support, staff augmentation, and creative design solutions."
+        description="Explore Devmetasol's comprehensive services including custom software development, cloud infrastructure, digital marketing, QA support, staff augmentation, and creative design solutions."
         keywords="software development services, cloud services, digital marketing, staff augmentation, QA testing, creative design, IT consulting, enterprise solutions"
         canonicalUrl="/services"
         breadcrumbs={[

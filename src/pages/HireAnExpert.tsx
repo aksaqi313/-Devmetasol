@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import HireExpertBanner from "../components/HireExpertBanner";
 import HireDevelopersBanner from "../components/HireDevelopersBanner";
 import HireCreativeDesignersBanner from "../components/HireCreativeDesignersBanner";
@@ -17,7 +17,7 @@ const HireAnExpert = () => {
     <div className="min-h-screen bg-white pt-4 sm:pt-6">
       <SEO
         title="Hire an Expert - Skilled Developers, Designers & Marketers"
-        description="Hire expert developers, creative designers, and digital marketing specialists from KingTechSol. Build your custom team with skilled professionals for your projects."
+        description="Hire expert developers, creative designers, and digital marketing specialists from Devmetasol. Build your custom team with skilled professionals for your projects."
         keywords="hire developers, hire designers, hire digital marketers, staff augmentation, IT staffing, remote developers, dedicated team, expert developers, freelance experts"
         canonicalUrl="/hire-an-expert"
         breadcrumbs={[

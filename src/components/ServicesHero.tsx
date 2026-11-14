@@ -1,4 +1,4 @@
-
+﻿
 const ServicesHero = () => {
   const serviceFeatures = [
     { 
@@ -71,7 +71,7 @@ const ServicesHero = () => {
               </h2>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed max-w-xl">
                 <span className="underline decoration-blue-500 decoration-2 underline-offset-4">
-                  KingTechSol
+                  Devmetasol
                 </span>{" "}
                 helps businesses grow with powerful & user-oriented digital
                 services, designed to improve operational efficiency.

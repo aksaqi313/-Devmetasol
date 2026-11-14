@@ -11,8 +11,8 @@ const AccessibilityStatement = () => {
     <>
       <SEO
         title="Accessibility Statement"
-        description="KingTechSol is committed to ensuring digital accessibility for people with disabilities. Learn about our accessibility standards and ongoing improvements."
-        keywords="accessibility statement, digital accessibility, WCAG compliance, accessible website, KingTechSol accessibility, ADA compliance"
+        description="Devmetasol is committed to ensuring digital accessibility for people with disabilities. Learn about our accessibility standards and ongoing improvements."
+        keywords="accessibility statement, digital accessibility, WCAG compliance, accessible website, Devmetasol accessibility, ADA compliance"
         canonicalUrl="/about-us/accessibility-statement"
         breadcrumbs={[
           { name: 'Home', url: '/' },
@@ -36,7 +36,7 @@ const AccessibilityStatement = () => {
                 Our Commitment
               </h2>
               <p className="leading-relaxed">
-                KingTechSol is committed to ensuring digital accessibility for people with 
+                Devmetasol is committed to ensuring digital accessibility for people with 
                 disabilities. We are continually improving the user experience for everyone 
                 and applying the relevant accessibility standards to achieve these goals.
               </p>
@@ -96,15 +96,17 @@ const AccessibilityStatement = () => {
                 Feedback and Contact
               </h2>
               <p className="leading-relaxed">
-                We welcome your feedback on the accessibility of KingTechSol's website and 
+                We welcome your feedback on the accessibility of Devmetasol's website and 
                 digital services. If you encounter any accessibility barriers or have 
                 suggestions for improvement, please contact us:
               </p>
               <div className="bg-white rounded-lg p-6 mt-4">
                 <p className="leading-relaxed">
-                  <strong>Email:</strong> infomeernaib47@gmail.com<br />
+                  <strong>Email:</strong> <a href="mailto:careers@devmetasol.com" className="text-blue-600 hover:underline">careers@devmetasol.com</a><br />
                   <strong>Phone:</strong> +92 330 4527519<br />
-                  <strong>Address:</strong> Lahore, Pakistan
+                  <strong>WhatsApp:</strong> <a href="https://wa.me/923320409566" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">+92 332 0409566</a><br />
+                  <strong>Office 1:</strong> LUMS Incubation Center, Lahore, Pakistan<br />
+                  <strong>Office 2:</strong> Jumeirah Lake Towers, Dubai, UAE
                 </p>
               </div>
               <p className="leading-relaxed">
@@ -131,7 +133,7 @@ const AccessibilityStatement = () => {
                 Future Goals
               </h2>
               <p className="leading-relaxed">
-                KingTechSol is committed to continuous improvement in accessibility. Our 
+                Devmetasol is committed to continuous improvement in accessibility. Our 
                 future goals include:
               </p>
               <ul className="list-disc pl-6 space-y-2 leading-relaxed">

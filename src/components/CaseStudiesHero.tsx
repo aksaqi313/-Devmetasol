@@ -12,7 +12,7 @@ const CaseStudiesHero = () => {
                 <span className="text-blue-400">Case Studies</span>
               </h1>
               <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg opacity-90 leading-relaxed">
-                Explore some of the trans-formative journeys of KingTechSol's global
+                Explore some of the trans-formative journeys of Devmetasol's global
                 clients.
               </p>
             </div>
@@ -58,7 +58,7 @@ const CaseStudiesHero = () => {
                   <svg width="40" height="30" viewBox="0 0 40 30" fill="none">
                     <path
                       d="M5 25 L10 20 L15 22 L20 15 L25 18 L30 12 L35 10"
-                      stroke="#60A5FA"
+                      stroke="#34D399"
                       strokeWidth="2"
                       fill="none"
                     />

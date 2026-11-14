@@ -1,4 +1,4 @@
-// ServiceCards.tsx
+﻿// ServiceCards.tsx
 
 const ServiceCards = () => {
   const services = [
@@ -309,7 +309,7 @@ const ServiceCards = () => {
               Our Services
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-          KingTechSol Solutions Tailored 
+          Devmetasol Solutions Tailored 
               <br />
               <span className="text-blue-600">to Your Business Needs</span>
             </h2>

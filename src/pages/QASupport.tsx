@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
@@ -12,7 +12,7 @@ const QASupport = () => {
     <>
       <ServiceSEO
         serviceName="QA & Support"
-        description="KingTechSol provides comprehensive QA testing and technical support services. Ensure your applications perform flawlessly with our quality assurance, automated testing, and 24/7 support."
+        description="Devmetasol provides comprehensive QA testing and technical support services. Ensure your applications perform flawlessly with our quality assurance, automated testing, and 24/7 support."
         canonicalUrl="/services/qa-support"
       />
       <div className="bg-white py-16 md:py-20">
@@ -30,7 +30,7 @@ const QASupport = () => {
         imageOnLeft={false}
         title="Quality Assurance & Technical Support"
         paragraphs={[
-          "KingTechSol's QA services encompass comprehensive testing strategies including functional testing, performance testing, security testing, and user acceptance testing. We ensure your applications meet the highest quality standards before deployment.",
+          "Devmetasol's QA services encompass comprehensive testing strategies including functional testing, performance testing, security testing, and user acceptance testing. We ensure your applications meet the highest quality standards before deployment.",
           "Our technical support team provides 24/7 support services, rapid issue resolution, and proactive monitoring to maintain optimal application performance and minimize downtime.",
           "We implement automated testing frameworks and continuous integration practices to catch issues early in the development cycle, reducing costs and accelerating time-to-market."
         ]}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 
 const ClientTestimonials = () => {
   const testimonials = [
@@ -6,19 +6,19 @@ const ClientTestimonials = () => {
       id: 1,
       name: "Ryan Jacobs",
       stars: 5,
-      text: "When I was looking for reliable web design services, it was challenging to choose. My friend recommended KingTechSol. It was the best decision ever. The team created the best web design to help my website stand out.",
+      text: "When I was looking for reliable web design services, it was challenging to choose. My friend recommended Devmetasol. It was the best decision ever. The team created the best web design to help my website stand out.",
     },
     {
       id: 2,
       name: "David Thompson",
       stars: 5,
-      text: "With end-to-end services, the team helped me throughout the process. They implemented the best digital marketing practices to enhance the visibility of my business in the online world. It was a great pleasure working with KingTechSol.",
+      text: "With end-to-end services, the team helped me throughout the process. They implemented the best digital marketing practices to enhance the visibility of my business in the online world. It was a great pleasure working with Devmetasol.",
     },
     {
       id: 3,
       name: "Hassan Al-Farsi",
       stars: 5,
-      text: "I'm pleased to have selected KingTechSol for our software development requirements. The team demonstrated exceptional competence and technical expertise, delivering robust, error-free solutions that exceeded our expectations.",
+      text: "I'm pleased to have selected Devmetasol for our software development requirements. The team demonstrated exceptional competence and technical expertise, delivering robust, error-free solutions that exceeded our expectations.",
     },
     {
       id: 4,

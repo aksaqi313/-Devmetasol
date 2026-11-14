@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import EndlessInnovators from "../components/EndlessInnovators";
-// import WhatYouWillHear from "../components/WhatYouWillHear";
 import OurClients from "../components/OurClients";
 import ContactForm from "../components/ContactForm";
 import OfficesMap from "../components/OfficesMap";
@@ -15,9 +14,9 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us - Get in Touch with KingTechSol"
-        description="Contact KingTechSol for software development, digital transformation, and IT consulting services. Reach out to our global offices in Pakistan, USA, Canada, UAE, and Europe."
-        keywords="contact KingTechSol, get in touch, software development inquiry, IT consulting contact, digital transformation consultation, business inquiry"
+        title="Contact Us - Get in Touch with Devmetasol"
+        description="Contact Devmetasol for software development, digital transformation, and IT consulting services. Reach out to our global offices in Pakistan, USA, Canada, UAE, and Europe."
+        keywords="contact Devmetasol, get in touch, software development inquiry, IT consulting contact, digital transformation consultation, business inquiry"
         canonicalUrl="/contact"
         breadcrumbs={[
           { name: 'Home', url: '/' },

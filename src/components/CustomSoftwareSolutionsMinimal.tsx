@@ -1,4 +1,4 @@
-import CustomSoftwareImage from "../assets/Custom-Software-Solutions.avif";
+﻿import CustomSoftwareImage from "../assets/Custom-Software-Solutions.avif";
 
 interface CustomSoftwareSolutionsMinimalProps {
   imageOnLeft?: boolean;
@@ -12,7 +12,7 @@ const SimpleSoftwareSolutions = ({
   imageOnLeft = false,
   title = "Custom Software Solutions",
   paragraphs = [
-    "Selecting the right technology partner is critical to your digital transformation success. KingTechSol understands your unique business requirements and delivers custom software development services that provide tailored digital solutions, including scalable system integration, enterprise application updates, and custom software creation.",
+    "Selecting the right technology partner is critical to your digital transformation success. Devmetasol understands your unique business requirements and delivers custom software development services that provide tailored digital solutions, including scalable system integration, enterprise application updates, and custom software creation.",
     "As a trusted software development partner, we advance your business objectives through dynamic, user-centric software development services. We ensure intuitive user interfaces while developing robust, resource-efficient software solutions, including enterprise web applications, native and cross-platform mobile applications, and scalable web platforms.",
     "To help you achieve your strategic business goals, our professionals leverage cutting-edge technologies, modern programming languages, and industry-leading platforms. We excel at empowering organizations of all sizes—from emerging startups to mid-market companies to large-scale enterprises—transforming business challenges into opportunities for growth and success.",
   ],

@@ -1,4 +1,4 @@
-// Devmetasol.jsx
+﻿// Devmetasol.jsx
 import teamPhoto from "../assets/Digital-Future.avif";
 
 const Devmetasol = () => {
@@ -12,7 +12,7 @@ const Devmetasol = () => {
               {/* Main Headline */}
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  <span className="text-pink-500">KingTechSol</span> Empowers
+                  <span className="text-pink-500">Devmetasol</span> Empowers
                   Businesses to Build an Intelligently Designed Digital Future
                 </h1>
               </div>

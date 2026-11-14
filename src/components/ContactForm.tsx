@@ -69,10 +69,10 @@ const ContactForm = () => {
             <p className="text-gray-600 text-base md:text-lg">
               If you have any specific project you want to discuss, email us at{" "}
               <a
-                href="mailto:infomeernaib47@gmail.com"
+                href="mailto:careers@devmetasol.com"
                 className="text-blue-500 hover:text-blue-600 font-semibold"
               >
-               KingTechSol
+                careers@devmetasol.com
               </a>{" "}
               or call us at{" "}
               <a

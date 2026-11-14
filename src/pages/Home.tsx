@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="KingTechSol - Digital Transformation & Software Development Solutions"
-        description="KingTechSol is a leading digital transformation and software development company. We deliver enterprise-grade software solutions, cloud infrastructure, AI/ML solutions, and digital transformation services worldwide."
-        keywords="software development, digital transformation, cloud services, web development, mobile app development, KingTechSol, enterprise solutions, IT consulting, custom software, AI solutions"
+        title="Devmetasol - Full-Stack Development, Staff Augmentation & Digital Marketing"
+        description="Devmetasol is a full-service software agency offering full-stack software development, staff augmentation, and digital marketing with content production. We help startups and enterprises build, scale, and market their products worldwide."
+        keywords="full stack development, staff augmentation, digital marketing, content production, software development agency, web development, mobile app development, hire developers, Devmetasol, custom software, SEO, performance marketing"
         canonicalUrl="/"
         breadcrumbs={[{ name: 'Home', url: '/' }]}
       />

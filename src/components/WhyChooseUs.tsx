@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 const WhyChooseUs = () => {
   const stats = [
@@ -12,11 +12,11 @@ const WhyChooseUs = () => {
     <div style={styles.container}>
       {/* Main Header Section */}
       <div style={styles.header}>
-        <h1 style={styles.mainTitle}>Why Choose KingTechSol?</h1>
+        <h1 style={styles.mainTitle}>Why Choose Devmetasol?</h1>
 
         <div style={styles.descriptionSection}>
           <p style={styles.description}>
-            KingTechSol provides dedicated full-stack expertise to deliver dynamic, 
+            Devmetasol provides dedicated full-stack expertise to deliver dynamic, 
             secure, and scalable enterprise solutions. Our team is committed to 
             delivering exceptional results precisely tailored to your business 
             requirements. We believe that well-designed, optimized custom digital 

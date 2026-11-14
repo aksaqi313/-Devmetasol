@@ -21,7 +21,7 @@ const CustomTeamBanner = () => {
                   y1="50"
                   x2="350"
                   y2="50"
-                  stroke="#60A5FA"
+                  stroke="#34D399"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.5"
@@ -31,7 +31,7 @@ const CustomTeamBanner = () => {
                   y1="100"
                   x2="350"
                   y2="100"
-                  stroke="#60A5FA"
+                  stroke="#34D399"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.5"
@@ -41,25 +41,25 @@ const CustomTeamBanner = () => {
                   y1="150"
                   x2="350"
                   y2="150"
-                  stroke="#60A5FA"
+                  stroke="#34D399"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.5"
                 />
                 
                 {/* Small circles */}
-                <circle cx="250" cy="50" r="4" fill="#60A5FA" opacity="0.6" />
-                <circle cx="300" cy="100" r="4" fill="#60A5FA" opacity="0.6" />
-                <circle cx="250" cy="150" r="4" fill="#60A5FA" opacity="0.6" />
+                <circle cx="250" cy="50" r="4" fill="#34D399" opacity="0.6" />
+                <circle cx="300" cy="100" r="4" fill="#34D399" opacity="0.6" />
+                <circle cx="250" cy="150" r="4" fill="#34D399" opacity="0.6" />
                 
                 {/* Gear-like circular segments */}
                 <path
                   d="M300 200 L320 200 L315 210 L325 215 L315 220 L320 230 L300 230 L295 220 L285 215 L295 210 Z"
-                  fill="#60A5FA"
+                  fill="#34D399"
                   opacity="0.4"
                 />
-                <circle cx="300" cy="200" r="30" stroke="#60A5FA" strokeWidth="2" fill="none" opacity="0.3" />
-                <circle cx="300" cy="200" r="20" stroke="#60A5FA" strokeWidth="1" fill="none" opacity="0.3" />
+                <circle cx="300" cy="200" r="30" stroke="#34D399" strokeWidth="2" fill="none" opacity="0.3" />
+                <circle cx="300" cy="200" r="20" stroke="#34D399" strokeWidth="1" fill="none" opacity="0.3" />
               </svg>
             </div>
           </div>

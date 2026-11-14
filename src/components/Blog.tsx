@@ -428,67 +428,44 @@ const Blog = () => {
   // Blog Listing View
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white pt-16 pb-12 sm:pt-20 sm:pb-16 md:pt-24 md:pb-20 lg:pt-28 lg:pb-24 overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-10 left-4 sm:top-20 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 bg-blue-400/30 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-          <div className="absolute top-20 right-4 sm:top-40 sm:right-10 w-48 h-48 sm:w-72 sm:h-72 bg-purple-400/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-10 left-1/4 sm:bottom-20 sm:left-1/3 w-48 h-48 sm:w-72 sm:h-72 bg-indigo-400/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+      {/* Blog Header */}
+      <section className="pt-10 sm:pt-14 md:pt-16 pb-6 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
             {/* Badge */}
-            <div className="inline-flex items-center bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-4 sm:mb-6 border border-white/30">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full mr-2 animate-pulse"></span>
+            <div className="inline-flex items-center bg-blue-100 text-blue-800 text-xs sm:text-sm font-semibold px-3.5 py-1.5 rounded-full mb-3 shadow-xs">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full mr-2"></span>
               Latest Insights & Stories
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-2">
-              <span className="block">Our</span>
-              <span className="block bg-gradient-to-r from-yellow-300 via-white to-cyan-300 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
+              Our{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700">
                 Blog
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-4">
-              Discover insights, tips, and stories from our team of experts. Stay updated with the latest trends in technology and design.
+            <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              Discover insights, tips, and stories from our team of experts. Stay updated with the latest trends in technology, design, and software engineering.
             </p>
-
-            {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">{blogPosts.length}+</div>
-                <div className="text-xs sm:text-sm text-blue-200">Articles</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">5+</div>
-                <div className="text-xs sm:text-sm text-blue-200">Categories</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1">100%</div>
-                <div className="text-xs sm:text-sm text-blue-200">Expert Content</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Blog Content */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
         {/* Category Filter */}
-        <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-12 md:mb-16 justify-center">
+        <div className="flex flex-wrap gap-2 sm:gap-3 mb-10 sm:mb-12 justify-center">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm md:text-base font-semibold transition-all duration-300 transform hover:scale-105 ${
+              className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer ${
                 selectedCategory === category
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/50"
-                  : "bg-gray-100 text-slate-700 hover:bg-gray-200 border border-gray-200"
+                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/30"
+                  : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200/80"
               }`}
             >
               {category}
@@ -497,29 +474,29 @@ const Blog = () => {
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
           {filteredPosts.map((post) => (
             <article
               key={post.id}
               onClick={() => setSelectedPost(post)}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer border border-gray-100 transform hover:-translate-y-2"
+              className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer border border-slate-200/90 transform hover:-translate-y-1 h-full flex flex-col"
             >
               {/* Featured Image */}
-              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-52 overflow-hidden flex-shrink-0">
                 <img
                   src={post.featuredImage}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
-                  <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-white/90 backdrop-blur-sm text-blue-700 rounded-full text-xs font-bold shadow-lg">
+                  <span className="px-2.5 py-1 bg-white/95 backdrop-blur-xs text-blue-700 rounded-full text-xs font-bold shadow-xs">
                     {post.category}
                   </span>
                 </div>
-                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
+                <div className="absolute bottom-3 left-3 sm:left-4 right-3 sm:right-4">
                   <div className="flex items-center text-white text-xs font-medium">
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     {post.readTime}
@@ -527,28 +504,51 @@ const Blog = () => {
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-4 sm:p-6">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-2 sm:mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
+              {/* Content Container */}
+              <div className="p-5 sm:p-6 flex-1 flex flex-col">
+                {/* Title (fixed min-height for identical 2-line title alignment) */}
+                <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 line-clamp-2 min-h-[3.5rem] flex items-start group-hover:text-blue-600 transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-sm sm:text-base text-slate-600 mb-3 sm:mb-4 line-clamp-3 leading-relaxed">
+
+                {/* Description (fixed min-height for identical 3-line description alignment) */}
+                <p className="text-sm text-slate-600 mb-4 line-clamp-3 min-h-[4rem] leading-relaxed">
                   {post.description}
                 </p>
 
-                {/* Meta Information */}
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 text-xs sm:text-sm text-slate-500 mb-3 sm:mb-4 pb-3 sm:pb-4 border-b border-gray-100">
-                  <div className="flex items-center">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
-                      <span className="text-white text-xs font-bold">
+                {/* Footer Section (pushed to bottom with mt-auto so all cards align perfectly) */}
+                <div className="mt-auto">
+                  {/* Meta Information */}
+                  <div className="flex items-center justify-between text-xs sm:text-sm text-slate-500 mb-4 pt-3 border-t border-slate-100">
+                    <div className="flex items-center min-w-0 pr-2">
+                      <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mr-2 flex-shrink-0 text-white font-bold text-xs shadow-2xs">
                         {post.author.charAt(0)}
-                      </span>
+                      </div>
+                      <span className="font-medium text-slate-700 truncate">{post.author}</span>
                     </div>
-                    <span className="font-medium truncate">{post.author}</span>
+                    <div className="flex items-center flex-shrink-0 text-slate-500">
+                      <svg
+                        className="w-3.5 h-3.5 mr-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                      <span>{formatDate(post.publishDate)}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center">
+
+                  {/* Read More Button */}
+                  <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-semibold py-2.5 sm:py-3 rounded-xl transition-all duration-300 flex items-center justify-center group-hover:shadow-md group-hover:shadow-blue-500/30">
+                    Read Article
                     <svg
-                      className="w-3 h-3 sm:w-4 sm:h-4 mr-1 flex-shrink-0"
+                      className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -557,30 +557,11 @@ const Blog = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        d="M9 5l7 7-7 7"
                       />
                     </svg>
-                    <span className="truncate">{formatDate(post.publishDate)}</span>
-                  </div>
+                  </button>
                 </div>
-
-                {/* Read More Button */}
-                <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm sm:text-base font-semibold py-2.5 sm:py-3 rounded-xl transition-all duration-300 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-blue-500/50">
-                  Read Article
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </button>
               </div>
             </article>
           ))}

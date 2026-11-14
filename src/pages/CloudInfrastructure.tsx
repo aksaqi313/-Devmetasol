@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
@@ -12,7 +12,7 @@ const CloudInfrastructure = () => {
     <>
       <ServiceSEO
         serviceName="Cloud Infrastructure"
-        description="KingTechSol provides cloud infrastructure services on AWS, Azure, and Google Cloud. Scalable, secure, and cost-effective cloud solutions that empower your business to innovate and grow."
+        description="Devmetasol provides cloud infrastructure services on AWS, Azure, and Google Cloud. Scalable, secure, and cost-effective cloud solutions that empower your business to innovate and grow."
         canonicalUrl="/services/cloud-infrastructure"
       />
       <div className="bg-white py-16 md:py-20">
@@ -30,7 +30,7 @@ const CloudInfrastructure = () => {
         imageOnLeft={true}
         title="Enterprise Cloud Solutions"
         paragraphs={[
-          "KingTechSol provides comprehensive cloud infrastructure services across leading platforms including AWS, Azure, and Google Cloud. We design and implement cloud architectures that optimize performance, reduce costs, and enhance security.",
+          "Devmetasol provides comprehensive cloud infrastructure services across leading platforms including AWS, Azure, and Google Cloud. We design and implement cloud architectures that optimize performance, reduce costs, and enhance security.",
           "Our cloud migration services ensure seamless transition from on-premises infrastructure to cloud environments, minimizing downtime and maintaining business continuity throughout the process.",
           "We offer ongoing cloud management, monitoring, and optimization services to ensure your cloud infrastructure operates at peak efficiency while maintaining the highest security standards."
         ]}

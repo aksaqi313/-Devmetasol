@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import NextGenTechnologiesSimple from "../components/NextGenTechnologiesSimple";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
@@ -12,7 +12,7 @@ const NextGenTechnologies = () => {
     <>
       <ServiceSEO
         serviceName="Next-Gen Technologies"
-        description="KingTechSol delivers cutting-edge solutions with AI/ML, blockchain, IoT, and emerging technologies. Transform your business with next-generation technology services."
+        description="Devmetasol delivers cutting-edge solutions with AI/ML, blockchain, IoT, and emerging technologies. Transform your business with next-generation technology services."
         canonicalUrl="/services/next-gen-technologies"
       />
       <NextGenTechnologiesSimple />

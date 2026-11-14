@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
@@ -12,7 +12,7 @@ const DigitalMarketingService = () => {
     <>
       <ServiceSEO
         serviceName="Digital Marketing"
-        description="KingTechSol provides strategic digital marketing services including SEO, social media marketing, content marketing, PPC advertising, and brand development to drive business growth."
+        description="Devmetasol provides strategic digital marketing services including SEO, social media marketing, content marketing, PPC advertising, and brand development to drive business growth."
         canonicalUrl="/services/digital-marketing"
       />
       <div className="bg-white py-16 md:py-20">
@@ -30,7 +30,7 @@ const DigitalMarketingService = () => {
         imageOnLeft={true}
         title="Comprehensive Digital Marketing Services"
         paragraphs={[
-          "KingTechSol delivers end-to-end digital marketing services including SEO optimization, social media management, content marketing, and paid advertising campaigns. Our data-driven approach ensures maximum ROI and measurable results.",
+          "Devmetasol delivers end-to-end digital marketing services including SEO optimization, social media management, content marketing, and paid advertising campaigns. Our data-driven approach ensures maximum ROI and measurable results.",
           "We develop customized marketing strategies tailored to your industry, target audience, and business objectives. Our team leverages advanced analytics and marketing automation tools to optimize campaign performance continuously.",
           "From brand development to lead generation and customer retention, we provide comprehensive digital marketing solutions that drive sustainable business growth and competitive advantage."
         ]}
