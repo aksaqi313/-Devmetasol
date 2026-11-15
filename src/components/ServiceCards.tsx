@@ -322,7 +322,7 @@ const ServiceCards = () => {
               Our Services
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-          Devmetasol Solutions Tailored 
+              Devmetasol Solutions Tailored
               <br />
               <span className="text-blue-600">to Your Business Needs</span>
             </h2>
@@ -348,7 +348,7 @@ const ServiceCards = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
-                  
+
                   {/* Floating Icon badge */}
                   <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md p-2 rounded-xl shadow-lg border border-white/40 flex items-center justify-center">
                     <div className="w-8 h-8 flex items-center justify-center [&>svg]:w-6 [&>svg]:h-6">
