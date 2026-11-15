@@ -1,9 +1,17 @@
 // ServiceCards.tsx
+import { Link } from "react-router-dom";
+import softwareImg from "../assets/service-software.jpg";
+import webImg from "../assets/service-web.jpg";
+import mobileImg from "../assets/service-mobile.jpg";
+import designImg from "../assets/service-design.jpg";
+import seoImg from "../assets/service-seo.jpg";
+import marketingImg from "../assets/service-marketing.jpg";
 
 const ServiceCards = () => {
   const services = [
     {
       title: "Software Development",
+      image: softwareImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -48,6 +56,7 @@ const ServiceCards = () => {
     },
     {
       title: "Web Development",
+      image: webImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -106,6 +115,7 @@ const ServiceCards = () => {
     },
     {
       title: "Mobile Development",
+      image: mobileImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -150,6 +160,7 @@ const ServiceCards = () => {
     },
     {
       title: "Product Design & UI/UX",
+      image: designImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -196,6 +207,7 @@ const ServiceCards = () => {
     },
     {
       title: "Search Engine Optimization",
+      image: seoImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -247,6 +259,7 @@ const ServiceCards = () => {
     },
     {
       title: "Digital Marketing",
+      image: marketingImg,
       icon: (
         <svg
           className="w-16 h-16"
@@ -320,44 +333,62 @@ const ServiceCards = () => {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-lg p-5 lg:p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col border-2 border-gray-200 hover:border-blue-500 hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50"
+                className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col border border-slate-200 hover:border-blue-500 hover:-translate-y-1.5"
               >
-                {/* Icon */}
-                <div className="mb-4 flex justify-center items-center group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+                {/* Service Image Container */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
+                  
+                  {/* Floating Icon badge */}
+                  <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md p-2 rounded-xl shadow-lg border border-white/40 flex items-center justify-center">
+                    <div className="w-8 h-8 flex items-center justify-center [&>svg]:w-6 [&>svg]:h-6">
+                      {service.icon}
+                    </div>
+                  </div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-blue-700 transition-colors duration-300">
-                  {service.title}
-                </h3>
+                <div className="p-5 lg:p-6 flex flex-col flex-1">
+                  {/* Title */}
+                  <h3 className="text-xl lg:text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                    {service.title}
+                  </h3>
 
-                {/* Service List */}
-                <ul className="space-y-2 mb-4 grow">
-                  {service.items.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      className="text-sm lg:text-base text-gray-700 flex items-start group-hover:text-gray-800 transition-colors duration-300"
-                    >
-                      <span className="text-blue-600 mr-2 mt-1.5 group-hover:text-blue-700 transition-colors duration-300">
-                        •
-                      </span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {/* Service List */}
+                  <ul className="space-y-2 mb-6 grow">
+                    {service.items.map((item, itemIndex) => (
+                      <li
+                        key={itemIndex}
+                        className="text-xs sm:text-sm text-slate-600 flex items-start"
+                      >
+                        <span className="text-blue-600 mr-2 font-bold leading-tight">
+                          •
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* Learn More Button */}
-                {/* <Link
-                  to={service.link}
-                  className="mt-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition-all duration-300 transform group-hover:scale-105 shadow-md group-hover:shadow-lg"
-                >
-                  Learn More
-                </Link> */}
+                  {/* Explore Service Button */}
+                  <Link
+                    to={service.link}
+                    className="mt-auto inline-flex items-center justify-center gap-2 bg-slate-50 hover:bg-blue-600 text-slate-700 hover:text-white font-semibold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition-all duration-300 border border-slate-200 hover:border-blue-600 shadow-2xs group-hover:shadow-md"
+                  >
+                    <span>Explore Service</span>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
