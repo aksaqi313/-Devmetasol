@@ -51,6 +51,7 @@ function App() {
           <Route path="/about-us/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/about-us/cookie-policy" element={<CookiePolicy />} />
           <Route path="/about-us/careers" element={<Careers />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/about-us/blogs" element={<Blog />} />
           <Route path="/locations" element={<Locations />} />
           <Route
