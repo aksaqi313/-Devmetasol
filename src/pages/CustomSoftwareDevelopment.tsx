@@ -2,6 +2,7 @@
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
+import softwareImg from "../assets/service-software.jpg";
 
 const CustomSoftwareDevelopment = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const CustomSoftwareDevelopment = () => {
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
         title="Enterprise Software Development"
+        image={softwareImg}
+        imageAlt="Enterprise Custom Software Development - Devmetasol"
         paragraphs={[
           "Devmetasol specializes in developing custom software solutions that align perfectly with your business objectives. Our enterprise-grade applications are built to scale, ensuring your technology infrastructure grows seamlessly with your business.",
           "We leverage cutting-edge technologies and industry best practices to deliver robust, secure, and high-performance software solutions. Our development process emphasizes code quality, maintainability, and long-term sustainability.",

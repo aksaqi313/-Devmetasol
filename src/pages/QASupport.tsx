@@ -2,6 +2,7 @@
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
+import qaImg from "../assets/service-qa.jpg";
 
 const QASupport = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const QASupport = () => {
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
         title="Quality Assurance & Technical Support"
+        image={qaImg}
+        imageAlt="Quality Assurance & Technical Support - Devmetasol"
         paragraphs={[
           "Devmetasol's QA services encompass comprehensive testing strategies including functional testing, performance testing, security testing, and user acceptance testing. We ensure your applications meet the highest quality standards before deployment.",
           "Our technical support team provides 24/7 support services, rapid issue resolution, and proactive monitoring to maintain optimal application performance and minimize downtime.",

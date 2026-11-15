@@ -2,6 +2,7 @@
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
+import staffImg from "../assets/hire-team.jpg";
 
 const StaffAugmentation = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const StaffAugmentation = () => {
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
         title="Flexible Staff Augmentation Services"
+        image={staffImg}
+        imageAlt="Flexible IT Staff Augmentation Services - Devmetasol"
         paragraphs={[
           "Devmetasol provides staff augmentation services that allow you to scale your development team quickly and efficiently. Our professionals are vetted, experienced, and ready to contribute from day one, seamlessly integrating into your existing workflows and culture.",
           "We offer flexible engagement models including full-time, part-time, and project-based arrangements. Whether you need frontend developers, backend engineers, DevOps specialists, or full-stack experts, we match you with the right talent for your specific requirements.",

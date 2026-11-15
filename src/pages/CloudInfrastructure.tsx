@@ -2,6 +2,7 @@
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
+import cloudImg from "../assets/service-cloud.jpg";
 
 const CloudInfrastructure = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const CloudInfrastructure = () => {
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={true}
         title="Enterprise Cloud Solutions"
+        image={cloudImg}
+        imageAlt="Enterprise Cloud Architecture & DevOps - Devmetasol"
         paragraphs={[
           "Devmetasol provides comprehensive cloud infrastructure services across leading platforms including AWS, Azure, and Google Cloud. We design and implement cloud architectures that optimize performance, reduce costs, and enhance security.",
           "Our cloud migration services ensure seamless transition from on-premises infrastructure to cloud environments, minimizing downtime and maintaining business continuity throughout the process.",

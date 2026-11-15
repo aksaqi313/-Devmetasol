@@ -10,6 +10,14 @@ import AllFooter from "../components/AllFooter";
 import OurClients from "../components/OurClients";
 import SEO from "../components/SEO";
 
+// Service-specific images
+import softwareImg from "../assets/service-software.jpg";
+import marketingImg from "../assets/service-marketing.jpg";
+import qaImg from "../assets/service-qa.jpg";
+import cloudImg from "../assets/service-cloud.jpg";
+import staffImg from "../assets/hire-team.jpg";
+import designImg from "../assets/service-design.jpg";
+
 const Services = () => {
   return (
     <div className="min-h-screen bg-white pt-4 sm:pt-6 md:pt-8">
@@ -28,56 +36,82 @@ const Services = () => {
         <ServicesHero />
       </div>
 
-      {/* Repeat CustomSoftwareSolutionsMinimal 5 times with alternating layouts */}
+      {/* 1. Custom Software Solutions */}
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
-        title="Digital Marketing"
+        title="Custom Software Development"
+        image={softwareImg}
+        imageAlt="Custom Software Development Services - Devmetasol"
         paragraphs={[
-          "Elevate your brand's online presence with our comprehensive digital marketing services. We create strategic campaigns that drive engagement, increase visibility, and convert leads into customers.",
-          "Our team specializes in SEO optimization, social media management, content marketing, and paid advertising. We analyze market trends and consumer behavior to deliver targeted campaigns that maximize your ROI.",
-          "From brand awareness to customer retention, we help you build a strong digital footprint that resonates with your audience and drives sustainable business growth.",
+          "Selecting the right engineering partner is critical to your digital transformation success. Devmetasol understands your unique business goals and delivers custom software solutions designed for high performance, fault-tolerant reliability, and enterprise scale.",
+          "We build bespoke web platforms, native mobile applications, robust microservices, and automated workflows. Our engineers leverage modern frameworks, cloud-native patterns, and clean code practices to turn your technical vision into market-leading software.",
+          "From emerging startups requiring rapid MVPs to established enterprises modernizing legacy systems, we deliver scalable solutions that reduce operational friction and drive sustainable competitive advantage."
         ]}
-        imageAlt="Digital Marketing"
       />
+
+      {/* 2. Digital Marketing & Growth */}
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={true}
-        title="Q&A / Question"
+        title="Digital Marketing & Growth"
+        image={marketingImg}
+        imageAlt="Digital Marketing & Performance Growth Services - Devmetasol"
         paragraphs={[
-          "Get expert answers to your technical questions and business challenges. Our Q&A service provides you with immediate access to industry experts who understand your needs.",
-          "Whether you're facing development hurdles, need architectural guidance, or require strategic advice, our team is here to help. We provide clear, actionable solutions tailored to your specific situation.",
-          "Our comprehensive support ensures you have the knowledge and confidence to make informed decisions and move forward with your projects successfully.",
+          "Elevate your brand's digital reach with data-driven performance marketing services. We engineer multi-channel campaigns that capture high-intent leads, boost conversion rates, and build lasting customer loyalty.",
+          "Our marketing specialists deliver comprehensive search engine optimization (SEO), paid search and social campaigns (PPC), technical content strategy, and conversion rate optimization (CRO) benchmarked against key performance metrics.",
+          "By analyzing consumer behavior and competitive market dynamics, we ensure every marketing dollar spent delivers measurable revenue growth and optimal return on investment (ROI)."
         ]}
-        imageAlt="Q&A / Question"
       />
+
+      {/* 3. Quality Assurance & Testing */}
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
-        title="Cloud Services & Integration"
+        title="Quality Assurance & QA Testing"
+        image={qaImg}
+        imageAlt="Software Quality Assurance and Automation Testing - Devmetasol"
         paragraphs={[
-          "Transform your infrastructure with our cloud services and seamless integration solutions. We help you migrate to the cloud, optimize your existing setup, and connect all your systems efficiently.",
-          "Our expertise spans AWS, Azure, Google Cloud, and hybrid solutions. We design scalable architectures that grow with your business while ensuring security, reliability, and cost-effectiveness.",
-          "From API integrations to data synchronization, we ensure all your applications and services work together harmoniously, improving productivity and reducing operational complexity.",
+          "Ensure flawless digital experiences before deploying to production. Our comprehensive Quality Assurance services combine manual exploratory testing with automated CI/CD validation to eliminate bugs early.",
+          "We conduct functional testing, cross-browser and mobile device verification, performance and load benchmarking, API security checks, and regression test suites across every software release cycle.",
+          "Our QA engineers safeguard your brand reputation by guaranteeing that your web, mobile, and enterprise platforms run reliably, securely, and seamlessly for every end user."
         ]}
-        imageAlt="Cloud Services & Integration"
       />
+
+      {/* 4. Cloud Services & Infrastructure */}
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={true}
-        title="Staff Augmentation"
+        title="Cloud Services & DevOps Architecture"
+        image={cloudImg}
+        imageAlt="Cloud Architecture, DevOps, and Infrastructure Services - Devmetasol"
         paragraphs={[
-          "Scale your development team quickly with our staff augmentation services. We provide skilled professionals who integrate seamlessly into your existing workflow and culture.",
-          "Whether you need frontend developers, backend engineers, DevOps specialists, or full-stack experts, we match you with the right talent. Our professionals are vetted, experienced, and ready to contribute from day one.",
-          "Flexible engagement models allow you to scale up or down based on project needs, ensuring you always have the right resources without the overhead of permanent hiring.",
+          "Modernize and secure your IT infrastructure with our cloud consulting, migration, and DevOps automation services across AWS, Microsoft Azure, and Google Cloud Platform.",
+          "We architect resilient, cost-optimized cloud solutions leveraging Docker containerization, Kubernetes orchestration, serverless microservices, and automated CI/CD deployment pipelines.",
+          "From seamless database migrations to 24/7 infrastructure observability and disaster recovery, we empower your systems to scale effortlessly alongside your business demands."
         ]}
-        imageAlt="Staff Augmentation"
       />
+
+      {/* 5. Staff Augmentation & Dedicated Squads */}
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={false}
-        title="Creative Design"
+        title="Staff Augmentation & Dedicated Squads"
+        image={staffImg}
+        imageAlt="IT Staff Augmentation and Dedicated Remote Engineering Teams - Devmetasol"
         paragraphs={[
-          "Bring your vision to life with our creative design services. We combine artistic excellence with user experience principles to create designs that are both beautiful and functional.",
-          "Our design team specializes in UI/UX design, branding, graphic design, and visual identity. We work closely with you to understand your brand and create designs that communicate your message effectively.",
-          "From initial concepts to final deliverables, we ensure every design element aligns with your business goals and creates memorable experiences for your users.",
+          "Rapidly scale your development bandwidth with top-tier, pre-vetted remote software engineers, UI/UX designers, and cloud architects who integrate directly into your daily sprint workflows.",
+          "Whether you need individual full-stack specialists or an entire cross-functional dedicated squad aligned to your time zone, Devmetasol connects you with high-caliber talent ready from day one.",
+          "Our flexible engagement models allow you to expand or adjust team capacity as roadmap priorities evolve, eliminating lengthy hiring cycles and permanent recruitment overhead."
         ]}
-        imageAlt="Creative Design"
+      />
+
+      {/* 6. Creative UI/UX Design */}
+      <CustomSoftwareSolutionsMinimal
+        imageOnLeft={true}
+        title="Creative UI/UX & Product Design"
+        image={designImg}
+        imageAlt="Creative UI/UX Design and Product Prototyping - Devmetasol"
+        paragraphs={[
+          "Transform complex user journeys into intuitive, visually striking digital interfaces. We merge aesthetic elegance with rigorous user research to build products that users genuinely love.",
+          "Our design studio specializes in Figma wireframing, high-fidelity interactive prototypes, responsive web & mobile layouts, comprehensive design systems, and brand identity development.",
+          "From initial discovery workshops to pixel-perfect design-to-development handoffs, we ensure your digital product communicates your brand values and maximizes user retention."
+        ]}
       />
 
       <NextGenTechnologiesSimple />
@@ -97,11 +131,7 @@ const Services = () => {
       {/* Design Banner Section */}
       <DesignBanner />
 
-      {/* Hire Expert Banner Section */}
-
       <AllFooter />
-
-      {/* Services Grid */}
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";
+import marketingImg from "../assets/service-marketing.jpg";
 
 const DigitalMarketingService = () => {
   useEffect(() => {
@@ -29,6 +30,8 @@ const DigitalMarketingService = () => {
       <CustomSoftwareSolutionsMinimal
         imageOnLeft={true}
         title="Comprehensive Digital Marketing Services"
+        image={marketingImg}
+        imageAlt="Comprehensive Digital Marketing & SEO Services - Devmetasol"
         paragraphs={[
           "Devmetasol delivers end-to-end digital marketing services including SEO optimization, social media management, content marketing, and paid advertising campaigns. Our data-driven approach ensures maximum ROI and measurable results.",
           "We develop customized marketing strategies tailored to your industry, target audience, and business objectives. Our team leverages advanced analytics and marketing automation tools to optimize campaign performance continuously.",
