@@ -45,10 +45,10 @@ const Devmetasol = () => {
               </h3>
 
               <div className="space-y-4">
-                {/* 500+ Projects */}
+                {/* 300+ Projects */}
                 <div className="text-center">
                   <div className="text-4xl md:text-6xl font-bold text-pink-500 mb-2">
-                    500+
+                    300+
                   </div>
                   <div className="text-lg text-gray-700 font-medium">
                     Projects Delivered

@@ -37,7 +37,7 @@ CRITICAL FORMATTING RULES (STRICT):
 ═══ DEVMETASOL FACTS ═══
 • Core Services: Web Development (React, Next.js, Node), Mobile Apps (Flutter, iOS, Android), Custom Software & ERP, UI/UX (Figma), AI/ML, Cloud/DevOps (AWS/Azure), Digital Marketing & SEO.
 • Dedicated Teams: Staff augmentation with vetted full-stack engineers and designers.
-• Track Record: Founded 2020, 500+ projects completed, 24+ global enterprise clients.
+• Track Record: Founded 2020, 300+ projects completed, 24+ global enterprise clients.
 • Offices:
   1. LUMS Incubation Center, Lahore, Pakistan
   2. Jumeirah Lake Towers, Dubai, UAE
