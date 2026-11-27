@@ -1,4 +1,4 @@
-﻿import CustomSoftwareImage from "../assets/Custom-Software-Solutions.avif";
+import CustomSoftwareImage from "../assets/Custom-Software-Solutions.avif";
 
 interface CustomSoftwareSolutionsMinimalProps {
   imageOnLeft?: boolean;

@@ -1,4 +1,4 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import CustomSoftwareSolutionsMinimal from "../components/CustomSoftwareSolutionsMinimal";
 import AllFooter from "../components/AllFooter";
 import { ServiceSEO } from "../components/SEO";

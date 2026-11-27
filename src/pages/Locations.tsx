@@ -21,6 +21,12 @@ const Locations = () => {
     address: [
       {
         '@type': 'PostalAddress',
+        addressLocality: 'Washington',
+        addressRegion: 'D.C.',
+        addressCountry: 'US'
+      },
+      {
+        '@type': 'PostalAddress',
         streetAddress: 'LUMS Incubation Center',
         addressLocality: 'Lahore',
         addressRegion: 'Punjab',
@@ -37,28 +43,24 @@ const Locations = () => {
 
   const locations = [
     {
+      country: "United States",
+      city: "Washington, D.C.",
+      address: "Washington, D.C., USA",
+      latitude: "38.907192",
+      longitude: "-77.036873",
+      coordinates: "N 38° 54' 25.89'' / W 77° 2' 12.74''",
+      description: "Our U.S. headquarters in the nation's capital, serving enterprise clients and government agencies across North America.",
+      services: ["AI & Automation Consulting", "Business Development", "Strategic Consulting"]
+    },
+    {
       country: "Pakistan",
       city: "Lahore",
-      address: "Office 1: LUMS Incubation Center, Lahore, Pakistan",
+      address: "Office 2: LUMS Incubation Center, Lahore, Pakistan",
       latitude: "31.470700",
       longitude: "74.410100",
       coordinates: "N 31° 28' 14.52'' / E 74° 24' 36.36''",
-      description: "Our headquarters and primary development center, serving as the hub for our global operations.",
+      description: "Our primary development center, serving as the hub for engineering and global operations.",
       services: ["Software Development", "Digital Transformation", "Consulting Services"]
-    },
-    {
-      country: "United States",
-      city: "New York",
-      address: "New York, USA",
-      description: "Strategic presence in the heart of the American business ecosystem, serving enterprise clients across North America.",
-      services: ["Business Development", "Client Relations", "Strategic Consulting"]
-    },
-    {
-      country: "United States",
-      city: "New Jersey",
-      address: "New Jersey, USA",
-      description: "Regional office supporting our growing client base in the Northeastern United States.",
-      services: ["Client Support", "Project Management", "Technical Consulting"]
     },
     {
       country: "Canada",
@@ -97,8 +99,8 @@ const Locations = () => {
     <>
       <SEO
         title="Our Locations - Devmetasol Global Offices"
-        description="Devmetasol operates globally with offices in Pakistan, USA, Canada, UAE, Saudi Arabia, and Portugal. Find our office locations and contact information."
-        keywords="Devmetasol locations, global offices, Lahore office, Dubai office, software company locations, IT company offices, Devmetasol contact"
+        description="Devmetasol operates globally with offices in Washington D.C. USA, Pakistan, Canada, UAE, Saudi Arabia, and Portugal. Find our office locations and contact information."
+        keywords="Devmetasol locations, global offices, Washington DC office, Lahore office, Dubai office, software company locations, IT company offices, Devmetasol contact"
         canonicalUrl="/locations"
         structuredData={localBusinessSchema}
         breadcrumbs={[

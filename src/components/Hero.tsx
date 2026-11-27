@@ -20,22 +20,20 @@ const Hero = () => {
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1 sm:py-1.5 rounded-full mb-3 sm:mb-4 md:mb-5 animate-fade-in shadow-xs">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full mr-2"></span>
-              Full-Stack Development, Staff Augmentation & Digital Marketing
+              Enterprise Software, Cloud & Digital Transformation Solutions Built to Scale
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-6xl font-extrabold text-slate-900 dark:text-white mb-3 sm:mb-4 leading-tight tracking-tight animate-slide-up px-2">
-              Build, Scale and Market
+              Building Smarter Businesses
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mt-1 sm:mt-1.5">
-                Your Product With One Team
+                Through AI, Automation & Innovation
               </span>
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg text-slate-600 dark:text-slate-400 mb-5 sm:mb-6 md:mb-8 max-w-3xl mx-auto animate-fade-in animation-delay-300 px-4 leading-relaxed">
-              Devmetasol is a full-service software agency. We design and
-              develop custom web and mobile applications, extend your team with
-              vetted engineers through staff augmentation, and grow your
-              revenue with digital marketing and content production that
-              delivers measurable results.
+              DevMetaSol helps startups and enterprises design, develop, and scale secure,
+              high-performance digital products — powered by AI, automation, and
+              modern engineering — from strategy to real-world implementation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up animation-delay-500 px-4">

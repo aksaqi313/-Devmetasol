@@ -43,8 +43,9 @@ const AllFooter = () => {
                       />
                     </svg>
                     <span className="break-words">
-                      Office 1: LUMS Incubation Center, Lahore, Pakistan<br />
-                      Office 2: Jumeirah Lake Towers, Dubai, UAE
+                      Office 1: Washington, D.C., USA<br />
+                      Office 2: LUMS Incubation Center, Lahore, Pakistan<br />
+                      Office 3: Jumeirah Lake Towers, Dubai, UAE
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -289,6 +290,14 @@ const AllFooter = () => {
                   Locations
                 </h3>
                 <ul className="space-y-2 text-sm text-slate-700">
+                  <li>
+                    <Link
+                      to="/locations"
+                      className="hover:text-blue-600 transition-colors"
+                    >
+                      Washington, D.C., USA
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       to="/locations"
